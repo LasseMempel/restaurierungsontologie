@@ -1,0 +1,64 @@
+@prefix : <https://www.w3id.org/archlink/ont/conservationontology#> .
+@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://www.w3id.org/archlink/ont/conservationontology> a owl:Ontology .
+
+:besteht_aus a owl:ObjectProperty ;
+    rdfs:domain :Objekt ;
+    rdfs:range :Objektmaterial .
+
+:durchgeführt_an a owl:ObjectProperty ;
+    rdfs:domain :Methode ;
+    rdfs:range :Objekt .
+
+:durchgeführt_durch a owl:ObjectProperty ;
+    rdfs:domain :Methode ;
+    rdfs:range :Agent .
+
+:gehört_zu a owl:ObjectProperty ;
+    rdfs:domain :Objekt ;
+    rdfs:range :Kollektion .
+
+:hat_Schaden a owl:ObjectProperty ;
+    rdfs:domain :Objekt ;
+    rdfs:range :Schadensphänomen .
+
+:ist_Teil_von a owl:ObjectProperty ;
+    rdfs:domain :Objekt ;
+    rdfs:range :Objekt .
+
+:nutzt_Material a owl:ObjectProperty ;
+    rdfs:domain :Methode ;
+    rdfs:range :Restaurierungsmaterial .
+
+:nutzt_Werkzeug a owl:ObjectProperty ;
+    rdfs:domain :Methode ;
+    rdfs:range :Objekt .
+
+:Agent a owl:Class ;
+    rdfs:subClassOf cidoc:E39_Actor .
+
+:Kollektion a owl:Class ;
+    rdfs:subClassOf cidoc:E78_Curated_Holding .
+
+:Objektmaterial a owl:Class ;
+    rdfs:subClassOf cidoc:E57_Material .
+
+:Restaurierungsmaterial a owl:Class ;
+    rdfs:subClassOf cidoc:E57_Material .
+
+:Schadensphänomen a owl:Class ;
+    rdfs:subClassOf cidoc:E3_Condition_State,
+        :Zustand .
+
+:Zustand a owl:Class ;
+    rdfs:subClassOf cidoc:E3_Condition_State .
+
+:Methode a owl:Class ;
+    rdfs:subClassOf cidoc:E7_Activity .
+
+:Objekt a owl:Class ;
+    rdfs:subClassOf cidoc:E19_Physical_Object .
+
