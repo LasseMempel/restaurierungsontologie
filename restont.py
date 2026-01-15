@@ -17,8 +17,7 @@ g.bind("rdfs", RDFS)
 ontology_uri = URIRef("https://www.w3id.org/archlink/ont/conservationontology")
 g.add((ontology_uri, RDF.type, OWL.Ontology))
 
-# Define your classes with CIDOC-CRM mappings
-# No need to declare CIDOC classes first!
+# Define classes with CIDOC-CRM mappings
 class_mappings = {
     "Kollektion": "E78_Curated_Holding",
     "Objekt": "E19_Physical_Object",
@@ -33,9 +32,6 @@ class_mappings = {
 for onto_class, cidoc_class in class_mappings.items():
     g.add((ONTO[onto_class], RDF.type, OWL.Class))
     g.add((ONTO[onto_class], RDFS.subClassOf, CIDOC[cidoc_class]))
-
-# Add the special subclass relationship for Schadensphänomen
-g.add((ONTO.Schadensphänomen, RDFS.subClassOf, ONTO.Zustand))
 
 # Define Object Properties
 properties = {

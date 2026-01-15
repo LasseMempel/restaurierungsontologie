@@ -5,6 +5,9 @@
 
 <https://www.w3id.org/archlink/ont/conservationontology> a owl:Ontology .
 
+:Zustand a owl:Class ;
+    rdfs:subClassOf cidoc:E3_Condition_State .
+
 :besteht_aus a owl:ObjectProperty ;
     rdfs:domain :Objekt ;
     rdfs:range :Objektmaterial .
@@ -50,10 +53,6 @@
     rdfs:subClassOf cidoc:E57_Material .
 
 :Schadensphänomen a owl:Class ;
-    rdfs:subClassOf cidoc:E3_Condition_State,
-        :Zustand .
-
-:Zustand a owl:Class ;
     rdfs:subClassOf cidoc:E3_Condition_State .
 
 :Methode a owl:Class ;
