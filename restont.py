@@ -17,7 +17,7 @@ g.bind("rdfs", RDFS)
 ontology_uri = URIRef("https://www.w3id.org/archlink/ont/conservationontology")
 g.add((ontology_uri, RDF.type, OWL.Ontology))
 
-# Define classes with CIDOC-CRM mappings
+# Define classes with superclasses: CIDOC-CRM mappings here but can be internal too...
 class_mappings = {
     "Kollektion": "E78_Curated_Holding",
     "Objekt": "E19_Physical_Object",
