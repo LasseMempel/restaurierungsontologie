@@ -5,59 +5,59 @@
 
 <https://www.w3id.org/archlink/ont/conservationontology> a owl:Ontology .
 
-:Zustand a owl:Class ;
-    rdfs:subClassOf cidoc:E3_Condition_State .
-
 :besteht_aus a owl:ObjectProperty ;
-    rdfs:domain :Objekt ;
+    rdfs:domain :Konservierungs_und_Restaurierungsobjekt ;
     rdfs:range :Objektmaterial .
 
 :durchgeführt_an a owl:ObjectProperty ;
-    rdfs:domain :Methode ;
-    rdfs:range :Objekt .
-
-:durchgeführt_durch a owl:ObjectProperty ;
-    rdfs:domain :Methode ;
-    rdfs:range :Agent .
-
-:gehört_zu a owl:ObjectProperty ;
-    rdfs:domain :Objekt ;
-    rdfs:range :Kollektion .
+    rdfs:domain :Behandlungsmethode ;
+    rdfs:range :Konservierungs_und_Restaurierungsobjekt .
 
 :hat_Schaden a owl:ObjectProperty ;
-    rdfs:domain :Objekt ;
+    rdfs:domain :Konservierungs_und_Restaurierungsobjekt ;
     rdfs:range :Schadensphänomen .
 
+:hat_Zustand a owl:ObjectProperty ;
+    rdfs:domain :Konservierungs_und_Restaurierungsobjekt ;
+    rdfs:range :Physischer_Objektzustand .
+
 :ist_Teil_von a owl:ObjectProperty ;
-    rdfs:domain :Objekt ;
-    rdfs:range :Objekt .
+    rdfs:domain :Konservierungs_und_Restaurierungsobjekt ;
+    rdfs:range :Konservierungs_und_Restaurierungsobjekt .
 
 :nutzt_Material a owl:ObjectProperty ;
-    rdfs:domain :Methode ;
-    rdfs:range :Restaurierungsmaterial .
+    rdfs:domain :Behandlungsmethode ;
+    rdfs:range :Konservierungs_und_Restaurierungsmaterial .
 
 :nutzt_Werkzeug a owl:ObjectProperty ;
-    rdfs:domain :Methode ;
-    rdfs:range :Objekt .
+    rdfs:domain :Behandlungsmethode ;
+    rdfs:range :Konservierungs_und_Restaurierungswerkzeug .
 
-:Agent a owl:Class ;
-    rdfs:subClassOf cidoc:E39_Actor .
+:Konservierungs_und_Restaurierungsmaterial a owl:Class ;
+    rdfs:label "Konservierungs und Restaurierungsmaterial"@de ;
+    rdfs:subClassOf cidoc:E57_Material .
 
-:Kollektion a owl:Class ;
-    rdfs:subClassOf cidoc:E78_Curated_Holding .
+:Konservierungs_und_Restaurierungswerkzeug a owl:Class ;
+    rdfs:label "Konservierungs und Restaurierungswerkzeug"@de ;
+    rdfs:subClassOf cidoc:E19_Physical_Object .
 
 :Objektmaterial a owl:Class ;
+    rdfs:label "Objektmaterial"@de ;
     rdfs:subClassOf cidoc:E57_Material .
 
-:Restaurierungsmaterial a owl:Class ;
-    rdfs:subClassOf cidoc:E57_Material .
-
-:Schadensphänomen a owl:Class ;
+:Physischer_Objektzustand a owl:Class ;
+    rdfs:label "Physischer Objektzustand"@de ;
     rdfs:subClassOf cidoc:E3_Condition_State .
 
-:Methode a owl:Class ;
+:Schadensphänomen a owl:Class ;
+    rdfs:label "Schadensphänomen"@de ;
+    rdfs:subClassOf cidoc:E3_Condition_State .
+
+:Behandlungsmethode a owl:Class ;
+    rdfs:label "Behandlungsmethode"@de ;
     rdfs:subClassOf cidoc:E7_Activity .
 
-:Objekt a owl:Class ;
+:Konservierungs_und_Restaurierungsobjekt a owl:Class ;
+    rdfs:label "Konservierungs und Restaurierungsobjekt"@de ;
     rdfs:subClassOf cidoc:E19_Physical_Object .
 
