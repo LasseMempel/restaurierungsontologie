@@ -1,63 +1,64 @@
 @prefix : <https://www.w3id.org/archlink/ont/conservationontology#> .
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://www.w3id.org/archlink/ont/conservationontology> a owl:Ontology .
-
-:besteht_aus a owl:ObjectProperty ;
-    rdfs:domain :Konservierungs_und_Restaurierungsobjekt ;
-    rdfs:range :Objektmaterial .
-
-:durchgeführt_an a owl:ObjectProperty ;
-    rdfs:domain :Behandlungsmethode ;
-    rdfs:range :Konservierungs_und_Restaurierungsobjekt .
-
-:hat_Schaden a owl:ObjectProperty ;
-    rdfs:domain :Konservierungs_und_Restaurierungsobjekt ;
-    rdfs:range :Schadensphänomen .
-
-:hat_Zustand a owl:ObjectProperty ;
-    rdfs:domain :Konservierungs_und_Restaurierungsobjekt ;
-    rdfs:range :Physischer_Objektzustand .
-
-:ist_Teil_von a owl:ObjectProperty ;
-    rdfs:domain :Konservierungs_und_Restaurierungsobjekt ;
-    rdfs:range :Konservierungs_und_Restaurierungsobjekt .
-
-:nutzt_Material a owl:ObjectProperty ;
-    rdfs:domain :Behandlungsmethode ;
-    rdfs:range :Konservierungs_und_Restaurierungsmaterial .
-
-:nutzt_Werkzeug a owl:ObjectProperty ;
-    rdfs:domain :Behandlungsmethode ;
-    rdfs:range :Konservierungs_und_Restaurierungswerkzeug .
-
-:Konservierungs_und_Restaurierungsmaterial a owl:Class ;
-    rdfs:label "Konservierungs und Restaurierungsmaterial"@de ;
-    rdfs:subClassOf cidoc:E57_Material .
-
-:Konservierungs_und_Restaurierungswerkzeug a owl:Class ;
-    rdfs:label "Konservierungs und Restaurierungswerkzeug"@de ;
-    rdfs:subClassOf cidoc:E19_Physical_Object .
-
-:Objektmaterial a owl:Class ;
-    rdfs:label "Objektmaterial"@de ;
-    rdfs:subClassOf cidoc:E57_Material .
-
-:Physischer_Objektzustand a owl:Class ;
-    rdfs:label "Physischer Objektzustand"@de ;
-    rdfs:subClassOf cidoc:E3_Condition_State .
-
-:Schadensphänomen a owl:Class ;
-    rdfs:label "Schadensphänomen"@de ;
-    rdfs:subClassOf cidoc:E3_Condition_State .
-
-:Behandlungsmethode a owl:Class ;
+:Behandlungsmethode a rdfs:Class ;
     rdfs:label "Behandlungsmethode"@de ;
     rdfs:subClassOf cidoc:E7_Activity .
 
-:Konservierungs_und_Restaurierungsobjekt a owl:Class ;
+:Konservierungs_und_Restaurierungsmaterial a rdfs:Class ;
+    rdfs:label "Konservierungs und Restaurierungsmaterial"@de ;
+    rdfs:subClassOf cidoc:E57_Material .
+
+:Konservierungs_und_Restaurierungsobjekt a rdfs:Class ;
     rdfs:label "Konservierungs und Restaurierungsobjekt"@de ;
     rdfs:subClassOf cidoc:E19_Physical_Object .
+
+:Konservierungs_und_Restaurierungswerkzeug a rdfs:Class ;
+    rdfs:label "Konservierungs und Restaurierungswerkzeug"@de ;
+    rdfs:subClassOf cidoc:E19_Physical_Object .
+
+:Objektmaterial a rdfs:Class ;
+    rdfs:label "Objektmaterial"@de ;
+    rdfs:subClassOf cidoc:E57_Material .
+
+:Physischer_Objektzustand a rdfs:Class ;
+    rdfs:label "Physischer Objektzustand"@de ;
+    rdfs:subClassOf cidoc:E3_Condition_State .
+
+:Schadensphänomen a rdfs:Class ;
+    rdfs:label "Schadensphänomen"@de ;
+    rdfs:subClassOf cidoc:E3_Condition_State .
+
+<https://www.w3id.org/archlink/ont/conservationontology> a owl:Ontology .
+
+:besteht_aus a rdf:Property ;
+    rdfs:domain :Konservierungs_und_Restaurierungsobjekt ;
+    rdfs:range :Objektmaterial .
+
+:durchgeführt_an a rdf:Property ;
+    rdfs:domain :Behandlungsmethode ;
+    rdfs:range :Konservierungs_und_Restaurierungsobjekt .
+
+:hat_Schaden a rdf:Property ;
+    rdfs:domain :Konservierungs_und_Restaurierungsobjekt ;
+    rdfs:range :Schadensphänomen .
+
+:hat_Zustand a rdf:Property ;
+    rdfs:domain :Konservierungs_und_Restaurierungsobjekt ;
+    rdfs:range :Physischer_Objektzustand .
+
+:ist_Teil_von a rdf:Property ;
+    rdfs:domain :Konservierungs_und_Restaurierungsobjekt ;
+    rdfs:range :Konservierungs_und_Restaurierungsobjekt .
+
+:nutzt_Material a rdf:Property ;
+    rdfs:domain :Behandlungsmethode ;
+    rdfs:range :Konservierungs_und_Restaurierungsmaterial .
+
+:nutzt_Werkzeug a rdf:Property ;
+    rdfs:domain :Behandlungsmethode ;
+    rdfs:range :Konservierungs_und_Restaurierungswerkzeug .
 

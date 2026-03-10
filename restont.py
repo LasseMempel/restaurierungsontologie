@@ -31,7 +31,7 @@ class_mappings = {
 }
 
 for onto_class, cidoc_class in class_mappings.items():
-    g.add((ONTO[onto_class], RDF.type, OWL.Class))
+    g.add((ONTO[onto_class], RDF.type, RDFS.Class))
     g.add((ONTO[onto_class], RDFS.label, Literal(onto_class.replace("_", " "), lang="de")))
     g.add((ONTO[onto_class], RDFS.subClassOf, CIDOC[cidoc_class]))
 
@@ -50,7 +50,7 @@ properties = {
 
 for prop_name, (domain, range_) in properties.items():
     prop = ONTO[prop_name]
-    g.add((prop, RDF.type, OWL.ObjectProperty))
+    g.add((prop, RDF.type, RDF.Property))
     g.add((prop, RDFS.domain, domain))
     g.add((prop, RDFS.range, range_))
 
