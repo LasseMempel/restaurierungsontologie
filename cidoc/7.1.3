@@ -1,0 +1,362 @@
+
+
+
+
+<!DOCTYPE html>
+<html class="gl-system ui-neutral with-top-bar with-header" lang="de">
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<title>7.1.3 · master · CIDOC-CRM / CIDOC CRM Base · GitLab</title>
+<script>
+//<![CDATA[
+window.gon={};gon.features={"duoSideRail":false,"inlineBlame":false,"directoryCodeDropdownUpdates":true,"repositoryFileTreeBrowser":false};gon.math_rendering_limits_enabled=true;
+//]]>
+</script>
+
+<script>
+//<![CDATA[
+const root = document.documentElement;
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  root.classList.add('gl-dark');
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+  if (e.matches) {
+    root.classList.add('gl-dark');
+  } else {
+    root.classList.remove('gl-dark');
+  }
+});
+
+//]]>
+</script>
+<script>
+//<![CDATA[
+var gl = window.gl || {};
+gl.startup_calls = {"/cidoc-crm/cidoc_crm_rdf/-/refs/master/logs_tree/7.1.3?format=json\u0026offset=0":{},"/cidoc-crm/cidoc_crm_rdf/-/blob/master/README.md?format=json\u0026viewer=rich":{}};
+gl.startup_graphql_calls = [{"query":"query pathLastCommit($projectPath: ID!, $path: String, $ref: String!, $refType: RefType) {\n  project(fullPath: $projectPath) {\n    __typename\n    id\n    repository {\n      __typename\n      lastCommit(path: $path, ref: $ref, refType: $refType) {\n        __typename\n        id\n        sha\n        title\n        titleHtml\n        descriptionHtml\n        message\n        webPath\n        committerName\n        committerEmail\n        committedDate\n        authoredDate\n        authorName\n        authorEmail\n        authorGravatar\n        author {\n          __typename\n          id\n          name\n          avatarUrl\n          webPath\n        }\n        signature {\n          __typename\n          ... on GpgSignature {\n            gpgKeyPrimaryKeyid\n            verificationStatus\n          }\n          ... on X509Signature {\n            verificationStatus\n            x509Certificate {\n              id\n              subject\n              subjectKeyIdentifier\n              x509Issuer {\n                id\n                subject\n                subjectKeyIdentifier\n              }\n            }\n          }\n          ... on SshSignature {\n            verificationStatus\n            keyFingerprintSha256\n          }\n        }\n        pipelines(ref: $ref, first: 1) {\n          __typename\n          edges {\n            __typename\n            node {\n              __typename\n              id\n              detailedStatus {\n                __typename\n                id\n                detailsPath\n                icon\n                text\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}\n","variables":{"projectPath":"cidoc-crm/cidoc_crm_rdf","ref":"master","path":"7.1.3","refType":null}},{"query":"query getPermissions($projectPath: ID!) {\n  project(fullPath: $projectPath) {\n    id\n    __typename\n    userPermissions {\n      __typename\n      pushCode\n      forkProject\n      createMergeRequestIn\n    }\n  }\n}\n","variables":{"projectPath":"cidoc-crm/cidoc_crm_rdf"}},{"query":"fragment PageInfo on PageInfo {\n  __typename\n  hasNextPage\n  hasPreviousPage\n  startCursor\n  endCursor\n}\n\nfragment TreeEntry on Entry {\n  __typename\n  id\n  sha\n  name\n  flatPath\n  type\n}\n\nquery getFiles(\n  $projectPath: ID!\n  $path: String\n  $ref: String!\n  $refType: RefType\n  $pageSize: Int!\n  $nextPageCursor: String\n) {\n  project(fullPath: $projectPath) {\n    id\n    __typename\n    repository {\n      __typename\n      tree(path: $path, ref: $ref, refType: $refType) {\n        __typename\n        trees(first: $pageSize, after: $nextPageCursor) {\n          __typename\n          edges {\n            __typename\n            node {\n              ...TreeEntry\n              webPath\n            }\n          }\n          pageInfo {\n            ...PageInfo\n          }\n        }\n        submodules(first: $pageSize, after: $nextPageCursor) {\n          __typename\n          edges {\n            __typename\n            node {\n              ...TreeEntry\n              webUrl\n              treeUrl\n            }\n          }\n          pageInfo {\n            ...PageInfo\n          }\n        }\n        blobs(first: $pageSize, after: $nextPageCursor) {\n          __typename\n          edges {\n            __typename\n            node {\n              ...TreeEntry\n              mode\n              webPath\n              lfsOid\n            }\n          }\n          pageInfo {\n            ...PageInfo\n          }\n        }\n      }\n    }\n  }\n}\n","variables":{"nextPageCursor":"","pageSize":100,"projectPath":"cidoc-crm/cidoc_crm_rdf","ref":"master","path":"7.1.3","refType":null}}];
+
+if (gl.startup_calls && window.fetch) {
+  Object.keys(gl.startup_calls).forEach(apiCall => {
+   gl.startup_calls[apiCall] = {
+      fetchCall: fetch(apiCall, {
+        // Emulate XHR for Rails AJAX request checks
+        headers: {
+          'X-Requested-With': 'XMLHttpRequest'
+        },
+        // fetch won’t send cookies in older browsers, unless you set the credentials init option.
+        // We set to `same-origin` which is default value in modern browsers.
+        // See https://github.com/whatwg/fetch/pull/585 for more information.
+        credentials: 'same-origin'
+      })
+    };
+  });
+}
+if (gl.startup_graphql_calls && window.fetch) {
+  const headers = {"X-CSRF-Token":"VB3nrpamEYEq8I-p2x3lbZaSsFWlFdOMzxwFrQYHVy228xUbUF_XXxqe_g_EiFO7A0LQh8vGkBnc-vbKPSpPUw","x-gitlab-feature-category":"source_code_management"};
+  const url = `https://gitlab.isl.ics.forth.gr/api/graphql`
+
+  const opts = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      ...headers,
+    }
+  };
+
+  gl.startup_graphql_calls = gl.startup_graphql_calls.map(call => ({
+    ...call,
+    fetchCall: fetch(url, {
+      ...opts,
+      credentials: 'same-origin',
+      body: JSON.stringify(call)
+    })
+  }))
+}
+
+
+//]]>
+</script>
+
+
+
+<meta content="light dark" name="color-scheme">
+<link rel="stylesheet" href="/assets/application-8a9f6b466d0b36fa2755d3040da2a3fae715d40a0a0f10b541aa3e9b59e96ccc.css" media="(prefers-color-scheme: light)" />
+<link rel="stylesheet" href="/assets/application_dark-8030447b34f738da83c7d723089105262c01eb13b5b3d30c4c5a3c41520806d7.css" media="(prefers-color-scheme: dark)" />
+<link rel="stylesheet" href="/assets/page_bundles/tree-c8b2da86bd9f1872e6c1dc4ce2c95ee33b47a7181079717517d2a6cbe182fbf0.css" /><link rel="stylesheet" href="/assets/page_bundles/commit_description-9e7efe20f0cef17d0606edabfad0418e9eb224aaeaa2dae32c817060fa60abcc.css" /><link rel="stylesheet" href="/assets/page_bundles/projects-6c68dbce82c8ad08ca756be341b31c8cb69af645ef5c77d4f873fa7df3002537.css" /><link rel="stylesheet" href="/assets/page_bundles/work_items-9c736722b9bb76f2c57757ed1bae3a5e79456e78cba897d309ea0aab9503330c.css" /><link rel="stylesheet" href="/assets/page_bundles/notes_shared-57a4db43ec755df32d86f7c5cdd49148a3b4135f33e08d3eee766fa405736239.css" />
+<link rel="stylesheet" href="/assets/application_utilities-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" media="(prefers-color-scheme: light)" />
+<link rel="stylesheet" href="/assets/application_utilities_dark-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" media="(prefers-color-scheme: dark)" />
+<link rel="stylesheet" href="/assets/tailwind-a9fde9b8ef840a75f25766bd8ab8b53262d10d4a4925fa5da3838923cf8e482f.css" />
+
+
+<link rel="stylesheet" href="/assets/fonts-deb7ad1d55ca77c0172d8538d53442af63604ff490c74acc2859db295c125bdb.css" />
+<link rel="stylesheet" href="/assets/highlight/themes/white-be4fdae1a25a255ed59f155dc9b7449697d7552a98dd3965643301056c8f426a.css" media="(prefers-color-scheme: light)" />
+<link rel="stylesheet" href="/assets/highlight/themes/dark-77ed54f14352adb6ae26be56730f321e0273576f8be6e1f73d1d2ac3ec191a0b.css" media="(prefers-color-scheme: dark)" />
+
+<script src="/assets/webpack/runtime.db496bf3.bundle.js" defer="defer"></script>
+<script src="/assets/webpack/main.2ca46d11.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/tracker.4ac2efa2.chunk.js" defer="defer"></script>
+<script>
+//<![CDATA[
+window.snowplowOptions = {"namespace":"gl","hostname":"gitlab.isl.ics.forth.gr:443","postPath":"/-/collect_events","forceSecureTracker":true,"appId":"gitlab_sm"}
+
+gl = window.gl || {};
+gl.snowplowStandardContext = {"schema":"iglu:com.gitlab/gitlab_standard/jsonschema/1-1-7","data":{"environment":"self-managed","source":"gitlab-rails","correlation_id":"01KPAKD24PAV8EGEYJY2MGW1Y0","plan":"free","extra":{},"user_id":null,"global_user_id":null,"user_type":null,"is_gitlab_team_member":null,"namespace_id":105,"ultimate_parent_namespace_id":105,"project_id":76,"feature_enabled_by_namespace_ids":null,"realm":"self-managed","instance_id":"ac617523-097c-4b75-a576-b2ba43650a85","unique_instance_id":"dbf41e90-5e45-5383-956d-cdaf5a57324e","host_name":"gitlab.isl.ics.forth.gr","instance_version":"18.5.2","context_generated_at":"2026-04-16T07:34:32.714Z"}}
+gl.snowplowPseudonymizedPageUrl = "https://gitlab.isl.ics.forth.gr/namespace105/project76/-/tree/master/7.1.3";
+gl.maskedDefaultReferrerUrl = null;
+gl.ga4MeasurementId = 'G-ENFH3X7M5Y';
+gl.duoEvents = [];
+gl.onlySendDuoEvents = true;
+
+
+//]]>
+</script>
+<link rel="preload" href="/assets/application_utilities-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" as="style" type="text/css">
+<link rel="preload" href="/assets/application-8a9f6b466d0b36fa2755d3040da2a3fae715d40a0a0f10b541aa3e9b59e96ccc.css" as="style" type="text/css">
+<link rel="preload" href="/assets/highlight/themes/white-be4fdae1a25a255ed59f155dc9b7449697d7552a98dd3965643301056c8f426a.css" as="style" type="text/css">
+
+<script src="/assets/locale/de/app-25ba15490c241fac22630dbcaefbce8d9544f8312795897a4b1456779b57df0f.js" defer="defer"></script>
+
+
+<script src="/assets/webpack/commons-pages.groups.new-pages.import.gitlab_projects.new-pages.import.manifest.new-pages.projects.n-44c6c18e.3cf8684d.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/commons-pages.search.show-super_sidebar.c76916f4.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/super_sidebar.40335732.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/commons-pages.projects-pages.projects.activity-pages.projects.alert_management.details-pages.project-2e472f70.e1b4e5a0.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/17193943.3d5c0e15.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/commons-pages.groups.packages-pages.groups.registry.repositories-pages.projects.blob.show-pages.proj-5dce5667.6347520c.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.branches.new-pages.projects.commits.show-pages.proje-81161c0b.37bbe678.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/commons-pages.import.bitbucket_server.new-pages.import.gitea.new-pages.import.gitlab_projects.new-pa-7a549248.df49ec20.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/dbe6a049.8c51c52f.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.snippets.edit-pages.projects.sni-42df7d4c.3a43e86e.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.snippets.show-pages.projects.tre-c684fcf6.6831d9b8.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/commons-pages.projects.blob.edit-pages.projects.blob.new-pages.projects.blob.show-pages.projects.sho-ec79e51c.2a8f769a.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.commits.show-pages.projects.show-pages.projects.tree.show.7f54bbc2.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.tree.show-pages.search.show.d1fa2a17.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/commons-pages.projects.blame.show-pages.projects.blob.show-pages.projects.show-pages.projects.tree.show.074f3747.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.tree.show.7fff4a19.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.tree.show-treeList.eff359d3.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/pages.projects.tree.show.b3cea5e4.chunk.js" defer="defer"></script>
+
+<meta content="object" property="og:type">
+<meta content="GitLab" property="og:site_name">
+<meta content="7.1.3 · master · CIDOC-CRM / CIDOC CRM Base · GitLab" property="og:title">
+<meta content="CIDOC-CRM implementation in RDF" property="og:description">
+<meta content="https://gitlab.isl.ics.forth.gr/uploads/-/system/project/avatar/76/logo3_-_Copy.png" property="og:image">
+<meta content="64" property="og:image:width">
+<meta content="64" property="og:image:height">
+<meta content="https://gitlab.isl.ics.forth.gr/cidoc-crm/cidoc_crm_rdf/-/tree/master/7.1.3" property="og:url">
+<meta content="summary" property="twitter:card">
+<meta content="7.1.3 · master · CIDOC-CRM / CIDOC CRM Base · GitLab" property="twitter:title">
+<meta content="CIDOC-CRM implementation in RDF" property="twitter:description">
+<meta content="https://gitlab.isl.ics.forth.gr/uploads/-/system/project/avatar/76/logo3_-_Copy.png" property="twitter:image">
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="YU2Ms4p9-AS-dbx5kzjFeRfWVrl1lVx28uHdevj-m4WDo34GTIQ-2o4bzd-MrXOvggY2axtGH-PhBy4dw9OD-w" />
+<meta name="csp-nonce" />
+<meta name="action-cable-url" content="/-/cable" />
+<link href="/-/manifest.json" rel="manifest">
+<link rel="icon" type="image/png" href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" id="favicon" data-original-href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/apple-touch-icon-b049d4bc0dd9626f31db825d61880737befc7835982586d015bded10b4435460.png" />
+<link href="/search/opensearch.xml" rel="search" title="Search GitLab" type="application/opensearchdescription+xml">
+<link rel="alternate" type="application/atom+xml" title="CIDOC CRM Base:master commits" href="https://gitlab.isl.ics.forth.gr/cidoc-crm/cidoc_crm_rdf/-/commits/master?format=atom" />
+
+
+
+
+<meta content="CIDOC-CRM implementation in RDF" name="description">
+<meta content="#ececef" name="theme-color">
+</head>
+
+<body class="tab-width-8 gl-browser-firefox gl-platform-windows body-fixed-scrollbar" data-group="cidoc-crm" data-group-full-path="cidoc-crm" data-namespace-id="105" data-page="projects:tree:show" data-page-type-id="master/7.1.3" data-project="cidoc_crm_rdf" data-project-full-path="cidoc-crm/cidoc_crm_rdf" data-project-id="76" data-project-studio-available="false" data-project-studio-enabled="false">
+<div id="js-tooltips-container"></div>
+
+<script>
+//<![CDATA[
+gl = window.gl || {};
+gl.client = {"isFirefox":true,"isWindows":true};
+
+
+//]]>
+</script>
+
+
+<header class="header-logged-out" data-testid="navbar">
+<a class="gl-sr-only gl-accessibility" href="#content-body">Skip to content</a>
+<div class="container-fluid">
+<nav aria-label="GitLab erkunden" class="header-logged-out-nav gl-flex gl-gap-3 gl-justify-between">
+<div class="gl-flex gl-items-center gl-gap-1">
+<span class="gl-sr-only">GitLab</span>
+<a title="Startseite" id="logo" class="header-logged-out-logo has-tooltip" aria-label="Startseite" data-track-label="main_navigation" data-track-action="click_gitlab_logo_link" data-track-property="navigation_top" href="/"><svg aria-hidden="true" role="img" class="tanuki-logo" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path class="tanuki-shape tanuki" d="m24.507 9.5-.034-.09L21.082.562a.896.896 0 0 0-1.694.091l-2.29 7.01H7.825L5.535.653a.898.898 0 0 0-1.694-.09L.451 9.411.416 9.5a6.297 6.297 0 0 0 2.09 7.278l.012.01.03.022 5.16 3.867 2.56 1.935 1.554 1.176a1.051 1.051 0 0 0 1.268 0l1.555-1.176 2.56-1.935 5.197-3.89.014-.01A6.297 6.297 0 0 0 24.507 9.5Z"
+        fill="#E24329"/>
+  <path class="tanuki-shape right-cheek" d="m24.507 9.5-.034-.09a11.44 11.44 0 0 0-4.56 2.051l-7.447 5.632 4.742 3.584 5.197-3.89.014-.01A6.297 6.297 0 0 0 24.507 9.5Z"
+        fill="#FC6D26"/>
+  <path class="tanuki-shape chin" d="m7.707 20.677 2.56 1.935 1.555 1.176a1.051 1.051 0 0 0 1.268 0l1.555-1.176 2.56-1.935-4.743-3.584-4.755 3.584Z"
+        fill="#FCA326"/>
+  <path class="tanuki-shape left-cheek" d="M5.01 11.461a11.43 11.43 0 0 0-4.56-2.05L.416 9.5a6.297 6.297 0 0 0 2.09 7.278l.012.01.03.022 5.16 3.867 4.745-3.584-7.444-5.632Z"
+        fill="#FC6D26"/>
+</svg>
+
+</a></div>
+<ul class="gl-list-none gl-p-0 gl-m-0 gl-flex gl-gap-3 gl-items-center gl-grow">
+<li class="header-logged-out-nav-item">
+<a class="" href="/explore">Erkunden</a>
+</li>
+</ul>
+<ul class="gl-list-none gl-p-0 gl-m-0 gl-flex gl-gap-3 gl-items-center gl-justify-end">
+<li class="header-logged-out-nav-item">
+<a href="/users/sign_in?redirect_to_referer=yes">Anmelden</a>
+</li>
+<li class="header-logged-out-nav-item">
+<a class="gl-button btn btn-md btn-confirm !gl-inline-flex" href="/users/sign_up"><span class="gl-button-text">
+Registrieren
+
+</span>
+
+</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<div class="layout-page page-with-super-sidebar">
+<aside class="js-super-sidebar super-sidebar super-sidebar-loading" data-command-palette="{&quot;project_files_url&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/files/master?format=json&quot;,&quot;project_blob_url&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/blob/master&quot;}" data-force-desktop-expanded-sidebar="" data-is-saas="false" data-root-path="/" data-sidebar="{&quot;is_logged_in&quot;:false,&quot;compare_plans_url&quot;:&quot;https://about.gitlab.com/pricing&quot;,&quot;context_switcher_links&quot;:[{&quot;title&quot;:&quot;Erkunden&quot;,&quot;link&quot;:&quot;/explore&quot;,&quot;icon&quot;:&quot;compass&quot;}],&quot;current_menu_items&quot;:[{&quot;id&quot;:&quot;project_overview&quot;,&quot;title&quot;:&quot;CIDOC CRM Base&quot;,&quot;avatar&quot;:&quot;/uploads/-/system/project/avatar/76/logo3_-_Copy.png&quot;,&quot;entity_id&quot;:76,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf&quot;,&quot;link_classes&quot;:&quot;shortcuts-project&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;manage_menu&quot;,&quot;title&quot;:&quot;Verwalten&quot;,&quot;icon&quot;:&quot;users&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/activity&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;activity&quot;,&quot;title&quot;:&quot;Aktivität&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/activity&quot;,&quot;link_classes&quot;:&quot;shortcuts-project-activity&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;members&quot;,&quot;title&quot;:&quot;Mitglieder&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/project_members&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;labels&quot;,&quot;title&quot;:&quot;Labels&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/labels&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;plan_menu&quot;,&quot;title&quot;:&quot;Planen&quot;,&quot;icon&quot;:&quot;planning&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/issues&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;project_issue_list&quot;,&quot;title&quot;:&quot;Tickets&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/issues&quot;,&quot;link_classes&quot;:&quot;shortcuts-issues has-sub-items&quot;,&quot;pill_count_field&quot;:&quot;openIssuesCount&quot;,&quot;pill_count_dynamic&quot;:false,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;boards&quot;,&quot;title&quot;:&quot;Ticketübersichten&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/boards&quot;,&quot;link_classes&quot;:&quot;shortcuts-issue-boards&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;milestones&quot;,&quot;title&quot;:&quot;Meilensteine&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/milestones&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;project_wiki&quot;,&quot;title&quot;:&quot;Wiki&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/wikis/home&quot;,&quot;link_classes&quot;:&quot;shortcuts-wiki&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;code_menu&quot;,&quot;title&quot;:&quot;Code&quot;,&quot;icon&quot;:&quot;code&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/merge_requests&quot;,&quot;is_active&quot;:true,&quot;items&quot;:[{&quot;id&quot;:&quot;project_merge_request_list&quot;,&quot;title&quot;:&quot;Merge Requests&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/merge_requests&quot;,&quot;link_classes&quot;:&quot;shortcuts-merge_requests&quot;,&quot;pill_count_field&quot;:&quot;openMergeRequestsCount&quot;,&quot;pill_count_dynamic&quot;:false,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;files&quot;,&quot;title&quot;:&quot;Repository&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/tree/master&quot;,&quot;link_classes&quot;:&quot;shortcuts-tree&quot;,&quot;is_active&quot;:true},{&quot;id&quot;:&quot;branches&quot;,&quot;title&quot;:&quot;Branch&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/branches&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;commits&quot;,&quot;title&quot;:&quot;Commits&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/commits/master?ref_type=heads&quot;,&quot;link_classes&quot;:&quot;shortcuts-commits&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;tags&quot;,&quot;title&quot;:&quot;Tags&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/tags&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;graphs&quot;,&quot;title&quot;:&quot;Repository-Diagramm&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/network/master?ref_type=heads&quot;,&quot;link_classes&quot;:&quot;shortcuts-network&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;compare&quot;,&quot;title&quot;:&quot;Revisionen vergleichen&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/compare?from=master\u0026to=master&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;project_snippets&quot;,&quot;title&quot;:&quot;Code-Schnipsel&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/snippets&quot;,&quot;link_classes&quot;:&quot;shortcuts-snippets&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;deploy_menu&quot;,&quot;title&quot;:&quot;Bereitstellung&quot;,&quot;icon&quot;:&quot;deployments&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/releases&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;releases&quot;,&quot;title&quot;:&quot;Releases&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/releases&quot;,&quot;link_classes&quot;:&quot;shortcuts-deployments-releases&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;packages_registry&quot;,&quot;title&quot;:&quot;Paket-Registry&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/packages&quot;,&quot;link_classes&quot;:&quot;shortcuts-container-registry&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;container_registry&quot;,&quot;title&quot;:&quot;Containerregistrierung&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/container_registry&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;model_registry&quot;,&quot;title&quot;:&quot;Modell-Registry&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/ml/models&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;operations_menu&quot;,&quot;title&quot;:&quot;Betreiben&quot;,&quot;icon&quot;:&quot;cloud-pod&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/terraform_module_registry&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;infrastructure_registry&quot;,&quot;title&quot;:&quot;Terraform-Module&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/terraform_module_registry&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;monitor_menu&quot;,&quot;title&quot;:&quot;Überwachen&quot;,&quot;icon&quot;:&quot;monitor&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/incidents&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;incidents&quot;,&quot;title&quot;:&quot;Vorfälle&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/incidents&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;analyze_menu&quot;,&quot;title&quot;:&quot;Analysieren&quot;,&quot;icon&quot;:&quot;chart&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/value_stream_analytics&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;cycle_analytics&quot;,&quot;title&quot;:&quot;Wertschöpfungskettenanalyse&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/value_stream_analytics&quot;,&quot;link_classes&quot;:&quot;shortcuts-project-cycle-analytics&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;contributors&quot;,&quot;title&quot;:&quot;Mitwirkenden-Analyse&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/graphs/master?ref_type=heads&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;repository_analytics&quot;,&quot;title&quot;:&quot;Repository-Analysen&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/graphs/master/charts&quot;,&quot;link_classes&quot;:&quot;shortcuts-repository-charts&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;model_experiments&quot;,&quot;title&quot;:&quot;Modellexperimente&quot;,&quot;link&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/ml/experiments&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false}],&quot;current_context_header&quot;:&quot;Projekt&quot;,&quot;support_path&quot;:&quot;https://about.gitlab.com/get-help/&quot;,&quot;docs_path&quot;:&quot;/help/docs&quot;,&quot;display_whats_new&quot;:false,&quot;show_version_check&quot;:null,&quot;search&quot;:{&quot;search_path&quot;:&quot;/search&quot;,&quot;issues_path&quot;:&quot;/dashboard/issues&quot;,&quot;mr_path&quot;:&quot;/dashboard/merge_requests&quot;,&quot;autocomplete_path&quot;:&quot;/search/autocomplete&quot;,&quot;settings_path&quot;:&quot;/search/settings&quot;,&quot;search_context&quot;:{&quot;group&quot;:{&quot;id&quot;:105,&quot;name&quot;:&quot;CIDOC-CRM&quot;,&quot;full_name&quot;:&quot;CIDOC-CRM&quot;},&quot;group_metadata&quot;:{&quot;issues_path&quot;:&quot;/groups/cidoc-crm/-/issues&quot;,&quot;mr_path&quot;:&quot;/groups/cidoc-crm/-/merge_requests&quot;},&quot;project&quot;:{&quot;id&quot;:76,&quot;name&quot;:&quot;CIDOC CRM Base&quot;},&quot;project_metadata&quot;:{&quot;mr_path&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/merge_requests&quot;,&quot;issues_path&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/issues&quot;},&quot;code_search&quot;:true,&quot;ref&quot;:&quot;master&quot;,&quot;scope&quot;:null,&quot;for_snippets&quot;:null}},&quot;panel_type&quot;:&quot;project&quot;,&quot;shortcut_links&quot;:[{&quot;title&quot;:&quot;Code-Schnipsel&quot;,&quot;href&quot;:&quot;/explore/snippets&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-snippets&quot;},{&quot;title&quot;:&quot;Gruppen&quot;,&quot;href&quot;:&quot;/explore/groups&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-groups&quot;},{&quot;title&quot;:&quot;Projekte&quot;,&quot;href&quot;:&quot;/explore/projects/starred&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-projects&quot;}],&quot;terms&quot;:null}"></aside>
+
+
+<div class="content-wrapper">
+<div class="broadcast-wrapper">
+
+
+
+</div>
+<div class="alert-wrapper alert-wrapper-top-space gl-flex gl-flex-col gl-gap-3 container-fluid container-limited">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="top-bar-fixed container-fluid" data-testid="top-bar">
+<div class="top-bar-container gl-flex gl-items-center gl-gap-2">
+<div class="gl-grow gl-basis-0 gl-flex gl-items-center gl-justify-start gl-gap-3">
+<button class="gl-button btn btn-icon btn-md btn-default btn-default-tertiary js-super-sidebar-toggle-expand super-sidebar-toggle -gl-ml-3" aria-controls="super-sidebar" aria-expanded="false" aria-label="Primäre Navigationsmenüleiste" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="sidebar-icon"><use href="/assets/icons-62cd41f10569bb5050df02409792752f47c042aa91f8d59f11b48b79e724f90d.svg#sidebar"></use></svg>
+
+</button>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"CIDOC-CRM","item":"https://gitlab.isl.ics.forth.gr/cidoc-crm"},{"@type":"ListItem","position":2,"name":"CIDOC CRM Base","item":"https://gitlab.isl.ics.forth.gr/cidoc-crm/cidoc_crm_rdf"},{"@type":"ListItem","position":3,"name":"Repository","item":"https://gitlab.isl.ics.forth.gr/cidoc-crm/cidoc_crm_rdf/-/tree/master/7.1.3"}]}
+
+
+</script>
+<div data-testid="breadcrumb-links" id="js-vue-page-breadcrumbs-wrapper">
+<div data-breadcrumbs-json="[{&quot;text&quot;:&quot;CIDOC-CRM&quot;,&quot;href&quot;:&quot;/cidoc-crm&quot;,&quot;avatarPath&quot;:null},{&quot;text&quot;:&quot;CIDOC CRM Base&quot;,&quot;href&quot;:&quot;/cidoc-crm/cidoc_crm_rdf&quot;,&quot;avatarPath&quot;:&quot;/uploads/-/system/project/avatar/76/logo3_-_Copy.png&quot;},{&quot;text&quot;:&quot;Repository&quot;,&quot;href&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/tree/master/7.1.3&quot;,&quot;avatarPath&quot;:null}]" id="js-vue-page-breadcrumbs"></div>
+<div id="js-injected-page-breadcrumbs"></div>
+<div id="js-page-breadcrumbs-extra"></div>
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid container-limited project-highlight-puc">
+<main class="content" id="content-body" itemscope itemtype="http://schema.org/SoftwareSourceCode">
+<div id="js-drawer-container"></div>
+<div class="flash-container flash-container-page sticky" data-testid="flash-container">
+<div id="js-global-alerts"></div>
+</div>
+
+
+
+
+
+
+
+<div class="tree-holder gl-clearfix js-per-page gl-mt-5" data-blame-per-page="1000" id="tree-holder">
+<div data-breadcrumbs-can-collaborate="false" data-breadcrumbs-can-edit-tree="false" data-breadcrumbs-can-push-code="false" data-breadcrumbs-can-push-to-branch="false" data-breadcrumbs-new-blob-path="/cidoc-crm/cidoc_crm_rdf/-/new/master" data-breadcrumbs-new-branch-path="/cidoc-crm/cidoc_crm_rdf/-/branches/new" data-breadcrumbs-new-dir-path="/cidoc-crm/cidoc_crm_rdf/-/create_dir/master" data-breadcrumbs-new-tag-path="/cidoc-crm/cidoc_crm_rdf/-/tags/new" data-breadcrumbs-upload-path="/cidoc-crm/cidoc_crm_rdf/-/create/master" data-download-links="[{&quot;text&quot;:&quot;zip&quot;,&quot;path&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/archive/master/cidoc_crm_rdf-master.zip&quot;},{&quot;text&quot;:&quot;tar.gz&quot;,&quot;path&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/archive/master/cidoc_crm_rdf-master.tar.gz&quot;},{&quot;text&quot;:&quot;tar.bz2&quot;,&quot;path&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/archive/master/cidoc_crm_rdf-master.tar.bz2&quot;},{&quot;text&quot;:&quot;tar&quot;,&quot;path&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/archive/master/cidoc_crm_rdf-master.tar&quot;}]" data-escaped-ref="master" data-http-url="https://gitlab.isl.ics.forth.gr/cidoc-crm/cidoc_crm_rdf.git" data-project-id="76" data-project-path="cidoc-crm/cidoc_crm_rdf" data-project-root-path="/cidoc-crm/cidoc_crm_rdf" data-ref="master" data-ref-type="" data-root-ref="master" data-ssh-url="git@gitlab.isl.ics.forth.gr:cidoc-crm/cidoc_crm_rdf.git" data-web-ide-button-default-branch="master" data-web-ide-button-options="{&quot;project_path&quot;:&quot;cidoc-crm/cidoc_crm_rdf&quot;,&quot;ref&quot;:&quot;master&quot;,&quot;is_fork&quot;:false,&quot;needs_to_fork&quot;:true,&quot;gitpod_enabled&quot;:false,&quot;is_blob&quot;:false,&quot;show_edit_button&quot;:false,&quot;show_web_ide_button&quot;:false,&quot;show_gitpod_button&quot;:false,&quot;show_pipeline_editor_button&quot;:false,&quot;web_ide_url&quot;:&quot;/-/ide/project/cidoc-crm/cidoc_crm_rdf/edit/master/-/7.1.3&quot;,&quot;edit_url&quot;:&quot;&quot;,&quot;pipeline_editor_url&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/ci/editor?branch_name=master&quot;,&quot;gitpod_url&quot;:&quot;&quot;,&quot;user_preferences_gitpod_path&quot;:&quot;/-/profile/preferences#user_gitpod_enabled&quot;,&quot;user_profile_enable_gitpod_path&quot;:&quot;/-/user_settings/profile?user%5Bgitpod_enabled%5D=true&quot;,&quot;fork_path&quot;:&quot;/cidoc-crm/cidoc_crm_rdf/-/forks/new&quot;,&quot;fork_modal_id&quot;:null}" data-xcode-url="" id="js-repository-blob-header-app"></div>
+<div class="info-well project-last-commit gl-mt-5">
+<div class="gl-flex gl-items-center gl-justify-center gl-m-auto gl-min-h-9 @lg/panel:gl-min-h-[4.5rem]" data-history-link="/cidoc-crm/cidoc_crm_rdf/-/commits/master" data-ref-type="" id="js-last-commit">
+<div class="gl-spinner-container" role="status"><span aria-hidden class="gl-spinner gl-spinner-md gl-spinner-dark !gl-align-text-bottom"></span><span class="gl-sr-only !gl-absolute">Lade</span>
+</div>
+</div>
+</div>
+<div data-escaped-ref="master" data-full-name="CIDOC-CRM / CIDOC CRM Base" data-has-revs-file="false" data-project-path="cidoc-crm/cidoc_crm_rdf" data-project-short-path="cidoc_crm_rdf" data-ref="master" id="js-tree-list"></div>
+
+</div>
+
+<script>
+//<![CDATA[
+  window.gl = window.gl || {};
+  window.gl.webIDEPath = '/-/ide/project/cidoc-crm/cidoc_crm_rdf/edit/master/-/7.1.3'
+
+
+//]]>
+</script>
+<div data-ambiguous="false" data-ref="master" id="js-ambiguous-ref-modal"></div>
+
+</main>
+</div>
+
+
+</div>
+</div>
+
+
+<script>
+//<![CDATA[
+if ('loading' in HTMLImageElement.prototype) {
+  document.querySelectorAll('img.lazy').forEach(img => {
+    img.loading = 'lazy';
+    let imgUrl = img.dataset.src;
+    // Only adding width + height for avatars for now
+    if (imgUrl.indexOf('/avatar/') > -1 && imgUrl.indexOf('?') === -1) {
+      const targetWidth = img.getAttribute('width') || img.width;
+      imgUrl += `?width=${targetWidth}`;
+    }
+    img.src = imgUrl;
+    img.removeAttribute('data-src');
+    img.classList.remove('lazy');
+    img.classList.add('js-lazy-loaded');
+    img.dataset.testid = 'js-lazy-loaded-content';
+  });
+}
+
+//]]>
+</script>
+<script>
+//<![CDATA[
+gl = window.gl || {};
+gl.experiments = {};
+
+
+//]]>
+</script>
+
+</body>
+</html>
+
