@@ -1,0 +1,1794 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix ocmp: <https://www.w3id.org/objectcore/terminology/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+<https://www.w3id.org/conservation/terms/metadata/98ZG32> a skos:Concept ;
+    ex:Verwendungshinweis "Der Name sollte im Format \"Vorname Nachname\" erfasst werden." ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/D1F5D3> ;
+    skos:definition "Angaben zur Person, die die Änderung durchgeführt hat."@de,
+        "Details of the person who made the change"@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00163> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "98ZG32" ;
+    skos:prefLabel "Bearbeiter*in der Änderung"@de,
+        "editor"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/A15F83> a skos:Concept ;
+    skos:altLabel "Untersuchungsstelle"@de,
+        "examination site"@en,
+        "localisation"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B3FCA1> ;
+    skos:definition "Angabe, an welcher Stelle auf dem Objekt die Untersuchung durchgeführt wurde. Nur bei Untersuchungen direkt auf dem Originalenobjekt nötig, entfällt bei Untersuchungen von Proben"@de,
+        "Indication of the location on the object where the examination was carried out. Only necessary for examinations carried out directly on the original object; not applicable for examinations of samples."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "A15F83" ;
+    skos:prefLabel "Lokalisation"@de,
+        "place of examination"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "bedingte Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/A2AG55> a skos:Concept ;
+    ex:Verwendungshinweis "Der genaue Aufbau der Kennung kann individuell gestaltet werden. Wichtig ist, dass eindeutig zugeordnet werden kann, auf welche konkrete Untersuchung sich die Angaben beziehen." ;
+    skos:altLabel "Kennung der Untersuchung"@de,
+        "examiantion identification"@en,
+        "examination ID"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B3FCA1> ;
+    skos:definition "Bezeichnung oder Nummer, mit der die jeweilige Untersuchung eindeutig identifiziert werden kann.  Beispiel: 2025-05-13_RFA_1 oder XY_24601"@de,
+        "Designation or number that uniquely identifies the respective examination.  Example: 2025-05-13_RFA_1 or XY_24601"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "A2AG55" ;
+    skos:prefLabel "Untersuchungskennung"@de,
+        "examination identifier"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "bedingte Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/A2FA1B> a skos:Concept ;
+    ex:Verwendungshinweis "Die einzuhaltenden Temperaturwerte ebenso wie die Abweichung sollen in Grad Celsius erfasst werden." ;
+    dcterms:source "D941BB" ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/C3A182> ;
+    skos:definition "Angabe der erforderlichen Temperaturwerte und zulässigen Schwankungsbereiche (maximal tolerierbare Abweichungen) für die sachgerechte Lagerung zur Vermeidung temperaturbedingter Schäden."@de,
+        "Specification of the required temperature values and permissible fluctuation ranges (maximum tolerable deviations) for proper storage to avoid temperature-related damage."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "A2FA1B" ;
+    skos:prefLabel "Temperatur (konservatorische Bedingungen)"@de,
+        "temperature (recommended conditions)"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/A4G52F> a skos:Concept ;
+    skos:altLabel "Spuren früherer Konservierungs- /Restaurierunseingriffe"@de,
+        "Evidence of previous conservation"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/F52262> ;
+    skos:definition "Beschreibung von Spuren früherer, nicht dokumentierter konservatorisch-restauratorischer Eingriffe am Objekt sowie der vermuteten Behandlungsmaßnahmen, die diese Spuren verursacht haben könnten."@de,
+        "Description of traces of previous, undocumented conservation work on the object and the presumed treatment measures that may have caused these traces."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "A4G52F" ;
+    skos:prefLabel "konservatorische Vorgeschichte"@de,
+        "conservation history"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/A5C668> a skos:Concept ;
+    ex:Verwendungshinweis "Die Erfassung sollte hier hin Form von \"Ja/Nein\" Abfragen oder Checkboxen erfolgen." ;
+    skos:altLabel "climate data"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/FFFCB7> ;
+    skos:definition "Angabe ob Temperatur- und Luftfeuchtigkeitswerte im Zuge des Monitorings kontrolliert wurden."@de,
+        "Indication of whether temperature and humidity values were checked during monitoring"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "A5C668" ;
+    skos:prefLabel "Klimawerte"@de,
+        "climate values"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/A8ABBA> a skos:Concept ;
+    ex:Verwendungshinweis "Auswahl zwischen: vor Eingriff, nach Eingriff, zwischen Eingriff, Monitoring" ;
+    skos:altLabel "Zeitpunkt der Erfassung"@de,
+        "time of recording"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/G5TA85> ;
+    skos:definition "Ergänzende Angaben, im Falle einer Zustandserfassung aufgrund konservatorisch-restauratorischer Maßnahme, ob es sich bei dem erfassten Zustand um den Zeitpunkt vor (Vorzustand), nach (Endzustand) oder zwischen der Maßnahme handelt.  Der Zustand vor und nach einer Maßnahme sollte dabei verpflichtend erfasst werden. Weitere Zustandserfassungen zwischen verschiedenen Maßnahmen sind bei Bedarf möglich."@de,
+        "In the case of condition assessment based on conservation measures, additional information should be provided on whether the assessed condition refers to the time before, after or between the conservation.  The condition before and after the conservation should be recorded as a matter of course. Further condition assessments between different measures are possible if necessary."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "A8ABBA" ;
+    skos:prefLabel "Erfassungszeitpunkt"@de,
+        "time of entry"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "bedingte Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/ADD53A> a skos:Concept ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/CCCC7G> ;
+    skos:definition "Bewertung des aktuellen Gefährdungsstatus und der verbleibenden Risiken basierend auf der letzten Gefährdungsbewertung."@de,
+        "Assessment of the current hazard status and residual risks based on the latest risk assessment"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "ADD53A" ;
+    skos:prefLabel "Einschätzung (Gefährdungsbewertung)"@de,
+        "result (safety assessment)"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/AF1F5C> a skos:Concept ;
+    ex:Verwendungshinweis "Wie genau diese Nummer in den jeweiligen Einrichtungen bezeichnet wird, bleibt individuell und wird auf diesen generischen Oberbegriff gemappt." ;
+    skos:altLabel "Identifikationsnummer (Erhaltungsmaßnahme)"@de,
+        "intervention ID"@en,
+        "intervention identification"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DA9CGG> ;
+    skos:definition "Nummer, die die jeweilige Maßnahme eindeutig identifiziert.   Beipspiel: Labornummer, Dokumentationsnummern, Werkblattnummer, etc."@de,
+        "Number that uniquely identifies the respective conservation measure.  Example: Laboratory number, documentation numbers, worksheet number, etc."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "AF1F5C" ;
+    skos:prefLabel "Maßnahmenkennnummer"@de,
+        "intervention identifier"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Bedingte Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/AFD671> a skos:Concept ;
+    ex:Verwendungshinweis "Das Datum sollte nach Möglichkeit gemäß ISO 8601 in der Form YYYY-MM-DD erfasst werden." ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/CCCC7G> ;
+    skos:definition "Erfassung des Datums, an dem die letzte Gefährdungsbewertung durchgeführt wurde."@de,
+        "Recording of the date on which the last risk assessment was carried out"@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00528> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "AFD671" ;
+    skos:prefLabel "Datum der Gefährdungsbewertung"@de,
+        "date of hazard assessment"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/B14C4A> a skos:Concept ;
+    skos:altLabel "Handlingsempfehlungen"@de ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/GF9C49> ;
+    skos:definition "Angaben zu Besonderheiten, die im Zuge der Handhabung des Objektes berücksichtigt werden müssen.   Beispiel: \"Nicht an den Henkeln anfassen\""@de,
+        "Information on special features that must be taken into account when handling the object.   Example: ‘Do not touch the handles.’"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "B14C4A" ;
+    skos:prefLabel "Empfehlungen zur Handhabung"@de,
+        "handling recommendations"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/B43DK5> a skos:Concept ;
+    ex:Verwendungshinweis "Das Datum sollte nach Möglichkeit gemäß ISO 8601 in der Form YYYY-MM-DD erfasst werden." ;
+    skos:altLabel "amendment date"@en,
+        "change date"@en,
+        "date of change"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/D1F5D3> ;
+    skos:definition "Zeitpunkt, zu dem der Bericht geändert wurde"@de,
+        "Time at which the report was amended"@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00528> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "B43DK5" ;
+    skos:prefLabel "Änderungsdatum"@de,
+        "modification date"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/B5DD1A> a skos:Concept ;
+    skos:altLabel "Objektansprache"@de,
+        "Objektname"@de,
+        "Objekttitel"@de ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B51DAF> ;
+    skos:definition "Benennung des konkreten Objektes. Kann sich aus einem offiziellen Titel oder aus Objekttyp und beschreibenden Attributen zusammensetzen.  Beispiel: \"Mona-Lisa\", \"rotfiguriger Krater\""@de,
+        "Name of the specific object. This may consist of an official title or object type, along with descriptive attributes.  Example: ‘Mona Lisa’, ‘red-figure krater’"@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00113> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "B5DD1A" ;
+    skos:prefLabel "Objektbenennung"@de,
+        "object title"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/B9835A> a skos:Concept ;
+    ex:Verwendungshinweis "Für die interne Zuweisung der Verantwortlichkeit/Zuständigkeit ist es empfohlen, diese Daten regelhaft zu erfassen. Bei der potenziellen Veröffentlichung bzw. dem Austausch des Datensatzes außerhalb der eigenen Einrichtung ist an dieser Stelle zu entscheiden, in wie fern die Person namentlich genannt werden möchte/kann!" ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/C11192> ;
+    skos:definition "Angaben zur Person (Name, ggfs. Funktion) der für die Durchführung des Monitorings verantwortlichen Person."@de,
+        "Personal details (name, position if applicable) of the person responsible for carrying out the monitoring"@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00163> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "B9835A" ;
+    skos:prefLabel "Zuständige Person (Monitoring)"@de,
+        "responsible person (monitoring)"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/BA8198> a skos:Concept ;
+    ex:Verwendungshinweis "Die einzuhaltende relative Luftfeuchtigkeit soll in Prozent erfasst werden." ;
+    dcterms:source "D941BB" ;
+    skos:altLabel "Luftfeuchte (konservatorische Bedingungen)"@de ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/C3A182> ;
+    skos:definition "Angabe der einzuhaltenden relativen Luftfeuchtigkeit und zulässigen Schwankungsbereiche (maximal tolerierbare Abweichungen) für die sachgerechte Lagerung zur Vermeidung feuchtigkeitsbedingter Schäden."@de,
+        "Specification of the relative humidity to be maintained and permissible fluctuation ranges (maximum tolerable deviations) for proper storage to prevent moisture-related damage"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "BA8198" ;
+    skos:prefLabel "Luftfeuchtigkeit (konservatorische Bedingung)"@de,
+        "humidity (recommended conditions)"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/BB78D2> a skos:Concept ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B7B8B6> ;
+    skos:definition "Dokumentation der bereits umgesetzten und/oder während der Objektbehandlung einzuhaltenden Schutzmaßnahmen zur Minimierung der Gefährdung. Einschließlich persönlicher Schutzausrüstung (PSA), technischer und organisatorischer Maßnahmen.  Beispiele: Tragen von Schutzhandschuhen, Arbeiten unter Abzug/ im Quarantänebereich, Objekt eingeschweißt"@de,
+        "Documentation of protective measures already implemented and/or to be observed during object handling in order to minimise risk. Including personal protective equipment (PPE), technical and organisational measures.  Examples: Wearing protective gloves, working under a fume cupboard/in a quarantine area, object sealed in plastic"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "BB78D2" ;
+    skos:prefLabel "Getroffene Schutzmaßnahmen"@de,
+        "proctective measures taken"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "bedingte Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/BF3639> a skos:Concept ;
+    ex:Verwendungshinweis "Die Erfassung sollte hier hin Form von \"Ja/Nein\" Abfragen oder Checkboxen erfolgen." ;
+    skos:altLabel "contaminants"@en,
+        "harmful substances"@en,
+        "hazardous substances"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/FFFCB7> ;
+    skos:definition "Angabe ob Vorhandensein von luftgetragenen Verunreinigungen, Ausgasungen oder andere chemische Belastungen in der Objektumgebung kontrolliert wurden."@de,
+        "Indication of whether the presence of airborne contaminants, emissions or other chemical pollutants in the vicinity of the property has been checked"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "BF3639" ;
+    skos:prefLabel "Schadstoffe"@de,
+        "pollutants"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/BF6D19> a skos:Concept ;
+    ex:Verwendungshinweis "Die Erfassung sollte hier hin Form von \"Ja/Nein\" Abfragen oder Checkboxen erfolgen." ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/FFFCB7> ;
+    skos:definition "Angabe ob Kontrolle auf Schädlingsbefall, Schimmelbildung oder andere biologische Aktivität am Objekt oder in dessen unmittelbarer Umgebung durchgeführt wurde."@de,
+        "Indication of whether checks for pest infestation, mould growth or other biological activity were carried out on the property or in its immediate vicinity"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "BF6D19" ;
+    skos:prefLabel "biologischer Befall"@de,
+        "biological infestation"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/BGC9F3> a skos:Concept ;
+    ex:Verwendungshinweis "An dieser Stelle sollten auch ergänzende Informationen zu anderen Metadaten eingetragen werden. Zum Beispiel, ob bei Gemälden der Rahmen als fester Bestandteil mit in die die Maße einbezogen wurde." ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DA2D73> ;
+    skos:definition "Möglichkeit weitere charakteristische Eigenschaften des Objektes zu beschreiben, die sich nicht eindeutig zum Objekttyp oder einer der anderen definierten Beschreibungselemente zuordnen lassen.   Beispiel: Farbe, Form, Besonderheit beim Aussehen"@de,
+        "Option to describe other characteristic properties of the object that cannot clearly be assigned to the object type or any of the other defined description elements."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "BGC9F3" ;
+    skos:prefLabel "Weitere Objekteigenschaften"@de,
+        "further object properties"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "optional" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/BGG5A6> a skos:Concept ;
+    skos:altLabel "Befund"@de,
+        "results of examination"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B3FCA1> ;
+    skos:definition "Angabe, der bei der Untersuchung festgestellten Beobachtungen und Ergebnisse."@de,
+        "Statement of observations and findings made during the examination."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "BGG5A6" ;
+    skos:prefLabel "Untersuchungsergebnis"@de,
+        "examination results"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/BGGCA4> a skos:Concept ;
+    skos:altLabel "hazard type"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B7B8B6> ;
+    skos:definition "Kategorisierung und Beschreibung der konkreten Gefährdungsart, z. B. chemisch, physikalisch oder biologisch"@de,
+        "Categorisation and description of the specific type of hazard, e.g. chemical, physical or biological"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "BGGCA4" ;
+    skos:prefLabel "Art der Gefährdung"@de,
+        "type of hazard"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "bedingte Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/C2488A> a skos:Concept ;
+    ex:Verwendungshinweis "Die Definition des Schadensgrad ist häufig sehr subjektiv bzw. objektspezifisch und kaum generisch vorzuschreiben. Daher sollte stets genau beschrieben werden, was die jeweilige Bewertung im konkreten Anwendungsfall bedeutet." ;
+    skos:altLabel "Grad des Schadensphänomens"@de,
+        "degree of damage"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/AA6941> ;
+    skos:definition "Bewertung des Ausmaßes der Beschädigung eines Objektes.  z.B. Abnutzung - leicht, Korrosion - stark"@de,
+        "Assessment of the extent of damage to an object.  e.g. wear and tear – slight, corrosion – severe"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "C2488A" ;
+    skos:prefLabel "Schadensgrad"@de,
+        "extent of damage"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/C33D85> a skos:Concept ;
+    skos:altLabel "Grund der Beprobung"@de ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/CD5C3F> ;
+    skos:definition "Hintergrundinformationen, warum die Probe entnommen wurde. Angabe zur Fragestellung, die mit der Probennahme bearbeitet werden soll, oder der geplanten Untersuchungsart.  Beispiel: Materialbestimmung, Altersdatierung"@de,
+        "Background information on why the sample was taken. Details of the question to be addressed by the sampling or the planned type of examination.  Example: material determination, age dating."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "C33D85" ;
+    skos:prefLabel "Anlass der Probenahme"@de,
+        "reason for sampling"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "bedingte Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/C364G1> a skos:Concept ;
+    skos:altLabel "Mischungsverhältnis"@de ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/CGC619> ;
+    skos:definition "Beschreibung der genauen Konzentration oder Zusammensetzung des Materials zur Sicherstellung der Reproduzierbarkeit und Beurteilung der Langzeitwirkung bzw.-stabilität."@de,
+        "Description of the exact concentration or composition of the material to ensure reproducibility and assessment of long-term effects or stability."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "C364G1" ;
+    skos:prefLabel "Konzentration"@de,
+        "concentration"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "optional" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/C421BF> a skos:Concept ;
+    ex:Verwendungshinweis "Das Datum sollte nach Möglichkeit gemäß ISO 8601 in der Form YYYY-MM-DD erfasst werden." ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/CGC619> ;
+    skos:definition "Erfassung des Produktions- oder Abfülldatums industrieller Produkte zur Nachvollziehbarkeit von Rezepturänderungen und Qualitätsschwankungen. Dient der Rückverfolgung von Chargen bei ungewöhnlichen Vorkommnissen und ermöglicht das Einholen relevanter Hintergrundinformationen zur Langzeitstabilität"@de,
+        "Recording of the production or filling date of industrial products for traceability of recipe changes and quality fluctuations. Used to trace batches in the event of unusual occurrences and enables relevant background information on long-term stability to be obtained."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "C421BF" ;
+    skos:prefLabel "Herstellungsdatum"@de,
+        "date of manufacture"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "optional" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/C4BCF8> a skos:Concept ;
+    ex:Verwendungshinweis "Idealerweise sollte auch die Belastbarkeit dieser Angaben mit erfasst werden. Da es sich häufig um interpretative Zuschreibungen handelt, sollte der Grad der Sicherheit bzw. die zugrundeliegende Beobachtung oder Untersuchung angegeben werden." ;
+    ex:Vokabularempfehlung "Art & Architecture Thesaurus" ;
+    skos:altLabel "Technik"@de,
+        "manufacturing technique"@en,
+        "production technique"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DA2D73> ;
+    skos:definition "Angaben zur Technik bzw. zu Techniken, die zur Herstellung des Objektes verwendet wurden.    Beispiel: \"Geschmiedet (Hammerspuren)\""@de,
+        "Information about the technique or techniques that were used to produce the object."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00131> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "C4BCF8" ;
+    skos:prefLabel "Herstellungstechnik"@de,
+        "manufacturing technology"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:KL9LCA "Ja" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/C6A532> a skos:Concept ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/BAA258> ;
+    skos:definition "Hintergrundinformationen, aus welchem Grund das Objekt konservatorisch-restauratorisch behandelt werden soll. I.d.R. beziehen sich diese Angaben darauf, was im Anschluss mit dem Objekt geschehen soll oder zuvor bereits geschehen ist.   Beispiel: Ausstellungsvorbereitung, Rückkehr aus Leihverkehr"@de,
+        "Background information on why the object is to be treated for conservation purposes. Typically, this information relates to what will happen to the object afterwards, or what has happened to it previously.  Examples: preparation for exhibition, return from loan."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "C6A532" ;
+    skos:prefLabel "Anlass der Erhaltungsmaßnahme"@de,
+        "reason for conservation intervention"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/C79561> a skos:Concept ;
+    ex:Verwendungshinweis "Für die interne Zuweisung der Verantwortlichkeit/Zuständigkeit ist es empfohlen, diese Daten regelhaft zu erfassen. Bei der potenziellen Veröffentlichung bzw. dem Austausch des Datensatzes außerhalb der eigenen Einrichtung ist an dieser Stelle zu entscheiden, in wie fern die Person namentlich genannt werden möchte/kann! Die Namen sollten im Format \"Vorname Nachname erfasst werden\"" ;
+    skos:altLabel "Konservator*in"@de,
+        "Restaurator*in"@de,
+        "Conservator"@en,
+        "Restorer"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DA9CGG> ;
+    skos:definition "Benennung der Person, die die jeweilige Maßnahme durchgeführt hat bzw. für diese verantwortlich ist."@de,
+        "Name of the person who carried out the respective measure or is responsible for it."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00163> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "C79561" ;
+    skos:prefLabel "Zuständige Person (Erhaltungsmaßnahme)"@de,
+        "responsible person (conservation intervention)"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/C7C3B7> a skos:Concept ;
+    ex:Verwendungshinweis "Die Angaben sollten sowohl den numerischen Wert als auch die Maßeinheit nach metrischem System im jeweils fachspezifischen Standard (g oder kg) enthalten" ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/BC5B57> ;
+    skos:definition "Angaben zur Masse des Objekts zum letzten Zeitpunkt der Objektuntersuchung"@de,
+        "Information on the mass of the object at the last time of the object examination"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "C7C3B7" ;
+    skos:prefLabel "aktuelles Gewicht"@de,
+        "current mass"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "optional" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/C8CG15> a skos:Concept ;
+    ex:Verwendungshinweis "Für die interne Zuweisung der Verantwortlichkeit/Zuständigkeit ist es empfohlen, diese Daten regelhaft zu erfassen. Bei der potenziellen Veröffentlichung bzw. dem Austausch des Datensatzes außerhalb der eigenen Einrichtung ist an dieser Stelle zu entscheiden, in wie fern die Person namentlich genannt werden möchte/kann! Die Namen sollten im Format \"Vorname Nachname erfasst werden\"" ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/CD5C3F> ;
+    skos:definition "Benennung der Person, die die Entnahme der Probe durchgeführt hat bzw. für diese verantwortlich ist."@de,
+        "Name of the person who took the sample or is responsible for it."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00163> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "C8CG15" ;
+    skos:prefLabel "Zuständige Person (Probenahme)"@de,
+        "Sampling person"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/C9C527> a skos:Concept ;
+    ex:Verwendungshinweis "Die Erfassung sollte hier hin Form von \"Ja/Nein\" Abfragen oder Checkboxen erfolgen." ;
+    skos:altLabel "LUX-Stunden"@de,
+        "LUX hours"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/FFFCB7> ;
+    skos:definition "Angabe ob akkumulierte Lichtexposition in LUX-Stunden während des Monitorings gemessen wurden."@de,
+        "Indication of whether accumulated light exposure was measured in LUX hours during monitoring"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "C9C527" ;
+    skos:prefLabel "Lichtexposition"@de,
+        "light exposure"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/CA1BC5> a skos:Concept ;
+    ex:Verwendungshinweis "Das Datum sollte nach Möglichkeit gemäß ISO 8601 in der Form YYYY-MM-DD erfasst werden. Im Falle der Nacherfassung" ;
+    skos:altLabel "Datum der Erfassung (Zustandserfassung)"@de,
+        "date of recording"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/F52262> ;
+    skos:definition "Angabe des Datums, an dem die Erfassung des Zustandes durchgeführt wurde."@de,
+        "Indication of the date on which the condition was recorded."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00528> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "CA1BC5" ;
+    skos:prefLabel "Erfassungsdatum"@de,
+        "date of entry"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/CA8K78> a skos:Concept ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/BC5B57> ;
+    skos:definition "Angabe zum Vorhandensein aller ursprünglichen Bestandteile oder Elemente eines Objektes."@de,
+        "Information regarding the presence of all original components or elements of an object."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "CA8K78" ;
+    skos:prefLabel "Vollständigkeit"@de,
+        "completeness"@en ;
+    ocmp:EO7QK9 "nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/CB7747> a skos:Concept ;
+    ex:Verwendungshinweis "Der genaue Aufbau der Kennung kann individuell gestaltet werden. Wichtig ist, dass eindeutig zugeordnet werden kann, auf welche konkrete Probe sich die Angaben beziehen." ;
+    skos:altLabel "Name der Probe"@de,
+        "Nummer der Probe"@de,
+        "sample ID"@en,
+        "sample identification"@en,
+        "sample name"@en,
+        "sample number"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/CD5C3F> ;
+    skos:definition "Bezeichnung oder Nummer, mit der die jeweilige Probe eindeutig identifiziert werden kann.   Beispiel: Metall-Probe_24601"@de,
+        "Designation or number that uniquely identifies the respective sample.  Example: Metal sample_24601"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "CB7747" ;
+    skos:prefLabel "Kennung der Probe"@de,
+        "sample identifier"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/CD3341> a skos:Concept ;
+    dcterms:source "Begriff und Definition nach DIN EN 16095: 2012-10" ;
+    skos:altLabel "Fundort"@de,
+        "Herstellungsort"@de,
+        "kulturelle Verortung"@de,
+        "cultural context"@en,
+        "location"@en,
+        "place of manufacture"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B51DAF> ;
+    skos:definition "Sammelbegriff für Angaben zur räumlichen oder kulturellen Verortung eines Objektes, die dessen Entstehungs- oder Auffindungskontext beschreiben. Soll als Einordnung von Objekten in ihren historischen, geografischen und kulturellen Zusammhang dienen. Die Angaben können dabei exakte Ortsangaben als auch größere geografische oder kulturelle Räume sein, je nach Überliefungslage bzw. Erkenntnisstand.   Beispiel: \"Fundort: Italien - Numana - Grab 34\", \"kultureller Kontext: Renaissance\""@de,
+        "A collective term for information about the geographical or cultural location of an object and the context in which it was created or found. It serves to classify objects within their historical, geographical, and cultural contexts. This information may include exact location details or broader geographical or cultural areas, depending on the available records or the current state of knowledge.   Example: ‘Location: Italy - Numana - Tomb 34’, ‘Cultural context: Renaissance’"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "CD3341" ;
+    skos:prefLabel "Herkunft"@de,
+        "origin"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/CDD613> a skos:Concept ;
+    ex:Verwendungshinweis "Das Datum sollte nach Möglichkeit gemäß ISO 8601 in der Form YYYY-MM-DD erfasst werden." ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DA9CGG> ;
+    skos:definition "kalendermäßige Erfassung des Zeitpunktes, an dem die jeweilige Maßnahme begonnen wurde."@de,
+        "calendar-based recording of the date on which the respective measure was initiated."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00528> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "CDD613" ;
+    skos:prefLabel "Beginn der Maßnahme"@de,
+        "start of intervention"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/CDF685> a skos:Concept ;
+    ex:Verwendungshinweis "Das Datum sollte nach Möglichkeit gemäß ISO 8601 in der Form YYYY-MM-DD erfasst werden." ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DA9CGG> ;
+    skos:definition "kalendermäßige Erfassung des Zeitpunktes, an dem die jeweilige Maßnahme beendet wurde."@de,
+        "calendar-based recording of the date on which the respective measure was completed."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00528> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "CDF685" ;
+    skos:prefLabel "Ende der Maßnahme"@de,
+        "end of intervention"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/CF3C22> a skos:Concept ;
+    skos:altLabel "Fragestellung"@de,
+        "Grund der Untersuchung"@de,
+        "Untersuchungsgrund"@de,
+        "question"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B3FCA1> ;
+    skos:definition "Hintergrundinformationen, warum diese Untersuchung durchgeführt wurde. Angabe der Fragestellung, die mit der Untersuchung bearbeitet werden soll."@de,
+        "Background information on why this examination was conducted. Specification of the question to be addressed by the examination."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "CF3C22" ;
+    skos:prefLabel "Untersuchungsanlass"@de,
+        "reason for examination"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/D1CFD5> a skos:Concept ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DAB4B7> ;
+    skos:definition "Angaben zum Material, welches für die Untersuchung des Objektes verwendet wurde. Diese Angabe ist besonders dann wichtig, wenn die Materialien Spuren bzw. Rückstände auf dem Objekt hinterlassen haben könnten."@de,
+        "Information about the material used to examine the object. This information is particularly important if the materials could have left traces or residues on the object."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "D1CFD5" ;
+    skos:prefLabel "verwendetes Material (Untersuchung)"@de,
+        "Material(s) used (examination)"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/D3AF3A> a skos:Concept ;
+    ex:Verwendungshinweis "Das Datum sollte nach Möglichkeit gemäß ISO 8601 in der Form YYYY-MM-DD erfasst werden." ;
+    skos:altLabel "Datum der Beprobung"@de,
+        "sampling date"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/CD5C3F> ;
+    skos:definition "Datum, an dem die Probe aus dem Objekt entnommen wurde.  Auch vage Angaben über den genauen Zeitpunkt der Probennahme, z.B. bei der Nacherfassung historischer Unterlagen, sind Informationen. Auch die Angabe \"unbekannt\" ist möglich."@de,
+        "Date on which the sample was taken from the object.  Even vague information about the exact time of sampling, e.g. when recording historical documents retrospectively, is still information. The entry ‘unknown’ is also possible."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00528> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "D3AF3A" ;
+    skos:prefLabel "Datum der Probennahme"@de,
+        "date of sampling"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/D4A13D> a skos:Concept ;
+    ex:Verwendungshinweis "Idealerweise sollte auch die Belastbarkeit dieser Angabe erfasst werden, d.h. ob die Ursache des Schadens gesichert bekannt ist (z.B. dokumentierter Wasserschaden) oder lediglich vermutet wird." ;
+    dcterms:source "Begriff nach DIN EN 15898:2020-02" ;
+    skos:altLabel "Schadensursache"@de,
+        "damaging factor"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/AA6941> ;
+    skos:definition "Beschreibung der ermittelten oder vermuteten Ursachen für die Beschädigung des Objektes."@de,
+        "Description of the identified or suspected causes of damage to the object."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "D4A13D" ;
+    skos:prefLabel "Schadensfaktor"@de,
+        "cause of damage"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "optional" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/D6A11G> a skos:Concept ;
+    skos:altLabel "Metadaten"@de,
+        "Parameter"@de,
+        "device configuration (examination instrument)"@en,
+        "device settings (examination instrument)"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/D949G6> ;
+    skos:definition "Angaben zu den Einstellungen bzw. Metadaten des Gerätes, welches für die Untersuchung verwendet wurde."@de,
+        "Information about the settings or metadata of the instrument used for the examination."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "D6A11G" ;
+    skos:prefLabel "Geräteeinstellungen (Untersuchungsgerät)"@de,
+        "instrument settings (examination instrument)"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/D78721> a skos:Concept ;
+    ex:Verwendungshinweis "Das Datum sollte nach Möglichkeit gemäß ISO 8601 in der Form YYYY-MM-DD erfasst werden." ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/AC16G1> ;
+    skos:definition "Zeitpunkt, zu dem der Bericht erstellt wurde"@de,
+        "Date on which the report was prepared"@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00528> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "D78721" ;
+    skos:prefLabel "Erstellungsdatum des Datensatzes"@de,
+        "date of report creation"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/D865C3> a skos:Concept ;
+    skos:altLabel "Hersteller"@de,
+        "manufacturer"@en,
+        "supplier"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/CGC619> ;
+    skos:definition "Angabe des Herstellers, Lieferanten oder der sonstigen Herkunft des verwendeten Materials zur Rückverfolgbarkeit und Qualitätssicherung. Diese Angaben liefern für spätere erneute Objektuntersuchungen und/oder Maßnahmen Hintergrundinformationen zu den Eigenschaften des Materials."@de,
+        "Information about the manufacturer, supplier or other source of the material used for traceability and quality assurance purposes. This information provides background information on the properties of the material for subsequent re-examination of the object and/or further measures."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "D865C3" ;
+    skos:prefLabel "Bezugsquelle"@de,
+        "source"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "optional" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/D866AD> a skos:Concept ;
+    ex:Verwendungshinweis "Idealerweise sollte auch die Belastbarkeit dieser Angaben mit erfasst werden, zum Beispiel ob zur Materialbestimmung eine naturwissenschaftliche Analyse verwendet wurde oder ob sie lediglich auf einer visuellen Begutachtung des Objektes beruht." ;
+    ex:Vokabularempfehlung "Art & Architecture Thesaurus" ;
+    skos:altLabel "Material"@de,
+        "Objektwerkstoff"@de ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DA2D73> ;
+    skos:definition "Angaben zum Material bzw. den Materialien aus dem/aus denen das Objekt besteht.    Beispiel: \"Bronze (Ergebnis RFA)\", \"Buntmetall (Ergebnis visuelle Begutachtung) \""@de,
+        "Information about the material or materials that the object is made from."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00132> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "D866AD" ;
+    skos:prefLabel "Objektmaterial"@de,
+        "object material"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:KL9LCA "Ja" ;
+    ocmp:TQKQBM "URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/D941BB> a skos:Concept ;
+    dcterms:source "A2FA1B",
+        "BA8198",
+        "C3A182",
+        "DF7759",
+        "FD6617" ;
+    skos:altLabel "exhibition guidelines"@en,
+        "presentation specifications"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/GF9C49> ;
+    skos:definition "Angaben zu Besonderheiten, die bei der Ausstellung/Präsentation des Objektes zu beachten sind.   Beispiel: \"Objekt ausschließlich auf individuell angepasster Stützkonstruktion präsentieren\", \"Ausstellung nur in klimatisierter Vitrine\""@de,
+        "Information on special features to be observed when exhibiting/presenting the object.   Example: ‘Present object exclusively on individually adapted support structure’, ‘Exhibit only in air-conditioned display case’"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "D941BB" ;
+    skos:prefLabel "Präsentationsvorgaben"@de,
+        "presentation guidelines"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/D9A6FA> a skos:Concept ;
+    skos:altLabel "Beprobungsmethode"@de,
+        "Entnahmeverfahren"@de,
+        "extraction method"@en,
+        "sampling procedure"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/CD5C3F> ;
+    skos:definition "Beschreibung, mit welcher Methode die Probe entnommen wurde. Angaben zur Vorgehensweise und zum eingesetzten Werkzeug.  Beispiel: Skalpellentnahme, Bohrkernentnahme, Abstrich mit Wattestäbchen"@de,
+        "Description of the method used to take the sample. Details of the procedure and the tool used.  Example: scalpel removal, core sampling, swab with cotton bud"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "D9A6FA" ;
+    skos:prefLabel "Entnahmemethode"@de,
+        "sampling method"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/DF7759> a skos:Concept ;
+    ex:Verwendungshinweis "Die einzuhaltende Beleuchtungsstärke soll in LUX erfasst werden, die maximal zulässige Expositionszeit in Stunden" ;
+    dcterms:source "D941BB" ;
+    skos:altLabel "LUX (konservatorische Bedingung)"@de,
+        "LUX (conservation condition"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/C3A182> ;
+    skos:definition "Angabe der maximal zulässigen Beleuchtungsstärke in LUX bzw. Expositionszeit für die schonende Präsenation zur Minimierung photochemischer und photophysikalischer Schädigungsprozesse bei gleichzeitig Gewährleistung ausreichender Sichtbarkeit für Betrachtung."@de,
+        "Specification of the maximum permissible illuminance in LUX or exposure time for gentle presentation to minimise photochemical and photophysical damage processes while ensuring sufficient visibility for viewing"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "DF7759" ;
+    skos:prefLabel "Beleuchtungsstärke (konservatorische Bedingungen)"@de,
+        "illuminance (recommended conditions)"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "optional" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/F1BA31> a skos:Concept ;
+    ex:Vokabularempfehlung "Art & Architecture Thesaurus" ;
+    skos:altLabel "Objektart"@de,
+        "Objektbezeichnung"@de,
+        "Sachbegriff"@de ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DA2D73> ;
+    skos:definition "grundlegende formale Kategorie, in die das Objekt eingeordnet wird.   Beispiel: \"Gemälde\" , \"Skulptur\", \"Münze\""@de,
+        "The basic formal category into which the object is classified."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "F1BA31" ;
+    skos:prefLabel "Objekttyp"@de,
+        "object type"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/F2244D> a skos:Concept ;
+    dcterms:source "C3A182" ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/GF9C49> ;
+    skos:definition "Angaben zu Besonderheiten, die im Zuge der Objektverpackung oder des Transportes zu beachten sind.   Beispiel: \"Objekt ausschließlich liegend transportieren\", \"Transport nur in klimatisiertem Fahrzeug\""@de,
+        "Information on special features that must be taken into account during the packaging or transport of the object.   Example: ‘Transport object lying down only’, ‘Transport only in air-conditioned vehicle’"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "F2244D" ;
+    skos:prefLabel "Verpackungs- und Transportempfehlungen"@de,
+        "Packaging and transport recommendations"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/F285B2> a skos:Concept ;
+    ex:Verwendungshinweis "Der Name sollte im Format \"Vorname Nachname\" erfasst werden." ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/AC16G1> ;
+    skos:definition "Angaben zur Person (Name, ggfs. Funktion) der für den Bericht verantwortlichen Person."@de,
+        "Personal details (name, position if applicable) of the person responsible for the report"@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00163> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "F285B2" ;
+    skos:prefLabel "Bearbeiter*in"@de,
+        "creator"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/F2A45F> a skos:Concept ;
+    ex:Verwendungshinweis "Das Datum sollte nach Möglichkeit gemäß ISO 8601 in der Form YYYY-MM-DD erfasst werden." ;
+    skos:altLabel "receipt date"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B51DAF> ;
+    skos:definition "Datum, an dem das Objekt in die aktuell zuständige Sammlung aufgenommen wurde. An dieser Stelle ist (noch) nicht das Datum, an dem das Objekt in die Restaurierungseinrichtung eingeliefert wurde gemeint."@de,
+        "The date on which the object was added to the collection currently responsible for it. It does not yet refer to the date on which the object was delivered to the conservation department."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00528>,
+        <http://terminology.lido-schema.org/lido00529> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "F2A45F" ;
+    skos:prefLabel "Eingangsdatum"@de,
+        "date of receipt"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "bedingte Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/F2AG55> a skos:Concept ;
+    ex:Verwendungshinweis "Gängige wissenschaftliche Zitationsweisen sind einzuhalten." ;
+    skos:altLabel "Bibliographie"@de,
+        "bibliography"@en,
+        "references"@en ;
+    skos:definition "Angaben zu Literatur, die für die Erstellung des Berichtes verwendet wurde."@de,
+        "Details of literature used in the preparation of the report"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "F2AG55" ;
+    skos:prefLabel "Verwendete Literatur"@de,
+        "literature used"@en ;
+    skos:topConceptOf <https://www.w3id.org/conservation/terms/metadata> ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "optional" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/F396G6> a skos:Concept ;
+    dcterms:source "A5C668",
+        "BF3639",
+        "BF6D19",
+        "C9C527",
+        "FFFCB7" ;
+    skos:altLabel "outcome of monitoring"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/C11192> ;
+    skos:definition "Zusammenfassende Bewertung aller durchgeführten Kontrollmaßnahme mit Angabe festgestellter Beobachtungen, Auffälligkeiten oder Handlungsempfehlungen.   Beispiel: \"Alle Parameter im Normbereich\", \"Luftfeuchtigkeit 5% über Sollwert, Nachregulierung erforderlich\", \"Verdacht auf Schimmelbildung, Objekt zur weiteren Untersuchung in Labor verbracht\""@de,
+        "Summary assessment of all control measures carried out, including observations, anomalies or recommendations for action.   Example: ‘All parameters within normal range’, ‘Humidity 5% above target value, readjustment required’, ‘Suspected mould growth, object sent to laboratory for further examination’"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "F396G6" ;
+    skos:prefLabel "Ergebnis des Monitorings"@de,
+        "result of monitoring"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/F3G8D1> a skos:Concept ;
+    ex:Verwendungshinweis "Für die interne Zuweisung der Verantwortlichkeit/Zuständigkeit ist es empfohlen, diese Daten regelhaft zu erfassen. Bei der potenziellen Veröffentlichung bzw. dem Austausch des Datensatzes außerhalb der eigenen Einrichtung ist an dieser Stelle zu entscheiden, in wie fern die Person namentlich genannt werden möchte/kann! Personennamen sollten in der Form \"Vorname Nachname\" erfasst werden.  Sollen keine Personennamen veröffentlicht werden, ist an dieser Stelle das zuständige Institution/Körperschaft zu nennen." ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B51DAF> ;
+    skos:definition "Benannte Person, die für Rückfragen in Bezug auf das Objekt und den Umgang mit diesem kontaktiert werden kann. Dies kann bei Privatbesitz der Eigentümer sein oder bei Objekten aus öffentlichen Einrichtungen z.B. der/die zuständige Kurator*in."@de,
+        "The designated person who can be contacted for queries regarding the object and its handling. For private property, this may be the owner; for objects from public institutions, it may be the responsible curator, for example."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00163> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "F3G8D1" ;
+    skos:prefLabel "Ansprechpartner*in"@de,
+        "contact person"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "optional" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/F58F6D> a skos:Concept ;
+    skos:altLabel "Lokalisation der Probennahme"@de,
+        "sampling place"@en,
+        "sampling point"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/CD5C3F> ;
+    skos:definition "Angabe, an welcher Stelle des Objekts die Probe entnommen wurde. Möglichst genaue Beschreibung des Probenortes zur späteren Zuordnung.  Beispiele: Vorderseite, linker unterer Rand, Bruchkante der Scherbe, Sockelinnenseite"@de,
+        "Indication of where on the object the sample was taken. As accurate a description as possible of the sample location for later identification.  Examples: front, lower left edge, fracture edge of the shard, inside of the base."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "F58F6D" ;
+    skos:prefLabel "Stelle der Probenahme"@de,
+        "sampling location"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/F5G576> a skos:Concept ;
+    ex:Verwendungshinweis "Das Datum sollte nach Möglichkeit gemäß ISO 8601 in der Form YYYY-MM-DD erfasst werden." ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/C11192> ;
+    skos:definition "Zeitpunkt der durchgeführten Kontrollmaßnahme zur chronologischen Dokumentation und Nachvollziehbarkeit"@de,
+        "Time of the control measure carried out for chronological documentation and traceability"@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00528> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "F5G576" ;
+    skos:prefLabel "Datum des Monitoring"@de,
+        "date of monitoring"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/F72743> a skos:Concept ;
+    ex:Verwendungshinweis "Besonders wenn dies von einer externen Einrichtung durchgeführt wird, ist die Erfassung zu empfehlen.  In Fällen, in denen bei der Veröffentlichung des Datensatzes die zuständige Person nicht genannt werden kann/darf, sollte stattdessen zumindest die zuständige Einrichtung im Datensatz enthalten sein." ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/CD5C3F> ;
+    skos:definition "Benennung der Einrichtung, die die Probenentnahme durchgeführt hat."@de,
+        "Name of the facility that carried out the sampling."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00413> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "F72743" ;
+    skos:prefLabel "Durchführende Einrichtung (Probenahme)"@de,
+        "Sampling institution"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "bedingte Pflicht" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/F87124> a skos:Concept ;
+    ex:Vokabularempfehlung "Art & Architecture Thesaurus" ;
+    skos:altLabel "Gerät"@de,
+        "instrument"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/A13CD1> ;
+    skos:definition "Benennung des bzw. der Werkzeuge und Geräte, die für die jeweilige konservatorische und/oder restauratorische Maßnahme verwendet wurden. Diese Angabe empfiehlt sich besonders dann, wenn durch die verwendeten Werkzeuge Spuren auf dem Objekt hinterlassen wurden."@de,
+        "Name the tools and equipment used for the respective conservation and/or restoration measures. This information is particularly recommended if the tools used left marks on the object."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "F87124" ;
+    skos:prefLabel "Werkzeug"@de,
+        "tool"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/F8F594> a skos:Concept ;
+    skos:altLabel "Art der Untersuchung"@de,
+        "examination type"@en,
+        "type of investigation"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B3FCA1> ;
+    skos:definition "Möglichkeit der Spezifikation, ob es sich um eine naturwissenschaftliche, technologische, materialtechnische oder sonstige Untersuchung handelt."@de,
+        "Option to specify whether the examination is scientific, technological, material-related or other."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "F8F594" ;
+    skos:prefLabel "Untersuchungsart"@de,
+        "type of examination"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "optionale" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/F9GB13> a skos:Concept ;
+    skos:altLabel "Objektdatierung"@de,
+        "zeitliche Einordnung"@de ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B51DAF> ;
+    skos:definition "zeitliche Einordnung des Objektes.  Beispiel: \"Urnenfelderzeit\" , \"15. Jh.\""@de,
+        "chronological classification of the object"@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00529> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "F9GB13" ;
+    skos:prefLabel "Datierung"@de,
+        "dating"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/FBFFF5> a skos:Concept ;
+    skos:altLabel "hazard information"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B7B8B6> ;
+    skos:definition "Hinweise auf potenzielle Gefahrenquellen und Risiken im Zusammenhang mit dem Objekt oder den bei der konservatorisch-restauratorischen Maßnahme (oder früheren Maßnahmen) verwendeten Materialien.  Beispiel: Schimmelbefall, Schadstoffkontaminiert"@de,
+        "Information on potential hazards and risks associated with the object or the materials used in the conservation-restoration measures (or previous measures)  Example: mould infestation, contamination with harmful substances"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "FBFFF5" ;
+    skos:prefLabel "Gefährdungshinweise"@de,
+        "hazard warnings"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/FC3322> a skos:Concept ;
+    ex:Verwendungshinweis "Bei diesem Feld muss zwischen der internen Erfassung des genauen Standorts und der allgemeinen Standortangabe für die Veröffentlichung des Datensatzes unterschieden werden. Der genaue Standort dient der internen Dokumentation und kann bei Bedarf vertraulich behandelt werden. Für veröffentlichte Datensätze sollte nur der übergeordnete Standort (z. B. Einrichtung,  Ausstellung, Depot) angegeben werden." ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B51DAF> ;
+    skos:definition "Angabe des regelhaften Aufbewahrungsort des Objekts, außerhalb der Restaurierungseinrichtung."@de,
+        "Indication of the usual storage location of the object, outside the restoration facility"@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido01018> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "FC3322" ;
+    skos:prefLabel "Standort"@de,
+        "current location"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/FD2B2B> a skos:Concept ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/CD5C3F> ;
+    skos:definition "Kurze Definition der wichtigsten Eigenschaften und Beschaffenheit der Probe. Möglichkeit, weitere Hintergrundinformationen zur Probe bzw. dem Befund, aus dem die Probe entstammt, zu erfassen.  Beispiel: \"Erdreste mit roten Verfärbungen\" , \"Textilfasern von rechter Skelettrippe\""@de,
+        "Brief definition of the most important characteristics and properties of the sample. Option to record further background information on the sample or the findings from which the sample originates.  Example: ‘Soil residues with red discolouration’, ‘Textile fibres from right skeletal rib’."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "FD2B2B" ;
+    skos:prefLabel "Probenbeschreibung"@de,
+        "sample description"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/FD6617> a skos:Concept ;
+    ex:Verwendungshinweis "Die einzuhaltenden Anforderungen sollen nach Möglichkeit in Mikrowatt pro Lumen (µW/lm) erfasst werden. Aber auch Angaben in Mikrowatt pro Quadratzentimeter oder in Prozent (bei Bezug auf UV-Filter) sind möglich. Wichtig ist neben der Erfassung der numerischen Werte auch die jeweilige Einheit mit anzugeben." ;
+    dcterms:source "D941BB" ;
+    skos:altLabel "UV (konservatorische Bedingungen)"@de,
+        "ultraviolet protection"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/C3A182> ;
+    skos:definition "Angabe der Anforderungen bezüglich ultravioletter Strahlung, einschließlich maximal zulässiger UV-Anteile im Beleuchtungsspektrum oder erforderliche UV-Filtermaßnahmen, zur Verhinderung UV-bedingter Materialschäden am Objekt."@de,
+        "Specification of requirements regarding ultraviolet radiation, including maximum permissible UV components in the lighting spectrum or necessary UV filter measures, to prevent UV-related material damage to the object"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "FD6617" ;
+    skos:prefLabel "UV-Schutz (konservatorische Bedingungen)"@de,
+        "UV protection (recommended conditions)"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "optional" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/FGF575> a skos:Concept ;
+    skos:altLabel "Erhaltungsziel"@de,
+        "Konservierungsziel"@de,
+        "konservatorische Zielsetzung"@de,
+        "conservation goal"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/BAA258> ;
+    skos:definition "Beschreibung der angestrebten Ergebnisse, die mit der durchgeführten Maßnahme erreicht werden sollen.  Beispiel: Sicherung der Malschichten, Volle Rekonstruktion der ursprünglichen Form"@de,
+        "Description of the desired results to be achieved with the measure implemented.  Example: Securing the paint layers, complete reconstruction of the original form."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "FGF575" ;
+    skos:prefLabel "konservatorische Zielsetzung"@de,
+        "conservation objective"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/FRG491G> a skos:Concept ;
+    ex:Verwendungshinweis "Die Angaben sollten sowohl den numerischen Wert als auch die Maßeinheit nach metrischem System im jeweils fachspezifischem Standard (mm, cm, m) enthalten" ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DBC278> ;
+    skos:definition "Angabe zur größten linearen Ausdehnung eines Objektes mit runder, ovaler oder ringförmiger Grundform, gemessen zwischen zwei gegenüberliegenden Punkten über dem geometrischen Mittelpunkt."@de,
+        "Specification of the greatest linear extension of an object with a round, oval or ring-shaped base, as measured between two opposite points across its geometric centre."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "FRG491G" ;
+    skos:prefLabel "Durchmesser"@de,
+        "diameter"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "optional" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/G50P34> a skos:Concept ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/AC16G1> ;
+    skos:definition "Angaben zur Sprache, in der der Bericht vorliegt."@de,
+        "Information on the language in which the report is available"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "G50P34" ;
+    skos:prefLabel "Sprache"@de,
+        "language"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/G56866> a skos:Concept ;
+    skos:altLabel "Nutzungsrechte"@de,
+        "rights of access"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/AC16G1> ;
+    skos:definition "Angaben zum Urheberrecht bzw. der Nutzungsrechte des Berichtes"@de,
+        "Information on copyright and rights of use for the report"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "G56866" ;
+    skos:prefLabel "Zugangsrecht"@de,
+        "access rights"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/G59SR3> a skos:Concept ;
+    skos:altLabel "Kennzeichnungsnummerntyp"@de ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/F7D3DB> ;
+    skos:definition "Angabe, um was für eine Art von Nummer es sich bei der Kennzeichnungsnummer handelt. Ob es sich um eine feste Inventarnummer handelt oder eine temporäre Nummer (z.B. Fundnummer), o.Ä."@de,
+        "Information about what type of number the identification number is. Whether it is a fixed inventory number or a temporary number (e.g. found number), etc."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "G59SR3" ;
+    skos:prefLabel "Art der Kennzeichnungsnummer"@de,
+        "type of identification number"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/G73958> a skos:Concept ;
+    ex:Verwendungshinweis "Das Datum sollte nach Möglichkeit gemäß ISO 8601 in der Form YYYY-MM-DD erfasst werden." ;
+    skos:altLabel "Datum der Untersuchung"@de,
+        "examination date"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B3FCA1> ;
+    skos:definition "Datum, an dem die jeweilige Untersuchung durchgeführt wurde.  Auch vage Angaben über den genauen Zeitpunkt einer Untersuchung, z.B. bei der Nacherfassung historischer Untersuchungen, sind Informationen. Auch die Angabe \"unbekannt\" ist möglich."@de,
+        "Date on which the respective examination was performed.  Even vague information about the exact time of an examination, e.g. when retroactively recording historical examinations, constitutes information. The entry ‘unknown’ is also possible."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00528> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "G73958" ;
+    skos:prefLabel "Untersuchungsdatum"@de,
+        "date of examination"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/G76A78> a skos:Concept ;
+    ex:Vokabularempfehlung "GND, Wikidata, VIAF" ;
+    dcterms:source "Begriff nach DIN EN 16095:2012-10" ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B51DAF> ;
+    skos:definition "Angaben zur Person, die das Objekt hergestellt hat - sofern bekannt.   Beispiel: \"Leonardo da Vinci\""@de,
+        "If known, details of the person who made the object."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00163> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "G76A78" ;
+    skos:prefLabel "Schöpfer*in"@de,
+        "creator"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "optional" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/G76B7G> a skos:Concept ;
+    ex:Verwendungshinweis "Besonders wenn dies von einer externen Einrichtung durchgeführt wird, ist die Erfassung zu empfehlen.  In Fällen, in denen bei der Veröffentlichung des Datensatzes die zuständige Person nicht genannt werden kann/darf, sollte stattdessen zumindest die zuständige Einrichtung im Datensatz enthalten sein." ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B3FCA1> ;
+    skos:definition "Benennung der Einrichtung, die die Untersuchung durchgeführt hat."@de,
+        "Name of the institution that conducted the examination."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00413> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "G76B7G" ;
+    skos:prefLabel "Durchführende Einrichtung (Untersuchung)"@de,
+        "Examining institution"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/G79CA9> a skos:Concept ;
+    dcterms:source "Begriff und Definition nach DIN EN 16095:2012-10" ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/AC1786> ;
+    skos:definition "Aufzeichnung der Bedingungen, unter denen das Objekt bis zum Zeitpunkt der Zustandserfassung gehalten wurde. Insbesondere sofern Auswirkungen der Umgebung auf das Objekt erkannt werden, sollten diese in der Zustandsbeschreibung gemeinsam mit der vermuteten Ursache festgehalten werden."@de,
+        "Record of the conditions in which the object was kept prior to the condition assessment. If any environmental effects on the object are detected, these should be recorded in the condition description, together with the presumed cause."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "G79CA9" ;
+    skos:prefLabel "bisherige Umgebungsbedingungen"@de,
+        "previous environmental conditions"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/G7F25F> a skos:Concept ;
+    ex:Verwendungshinweis "Für die interne Zuweisung der Verantwortlichkeit/Zuständigkeit ist es empfohlen, diese Daten regelhaft zu erfassen. Bei der potenziellen Veröffentlichung bzw. dem Austausch des Datensatzes außerhalb der eigenen Einrichtung ist an dieser Stelle zu entscheiden, in wie fern die Person namentlich genannt werden möchte/kann! Die Namen sollten im Format \"Vorname Nachname erfasst werden\"" ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B3FCA1> ;
+    skos:definition "Benennung der Person, die die Untersuchung durchgeführt hat bzw. für diese verantwortlich ist."@de,
+        "Name of the person who conducted the examination or is responsible for it."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00163> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "G7F25F" ;
+    skos:prefLabel "Zuständige Person (Untersuchung)"@de,
+        "Examining person"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/G814D2> a skos:Concept ;
+    ex:Verwendungshinweis "In Angabe des Zeitaufwandes soll nach Möglichkeit in Stunden erfolgen" ;
+    skos:altLabel "time commitment"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DA9CGG> ;
+    skos:definition "Summe der tatsächlich am Objekt geleisteten Arbeitsstunden währen der Maßnahme, ohne passive Zeiten wie Trocknungsphasen oder parallele Wartezeiten."@de,
+        "Total number of hours actually worked on the object during the measure, excluding passive periods such as drying phases or parallel waiting times."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "G814D2" ;
+    skos:prefLabel "Zeitaufwand"@de,
+        "time required"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "(optional)" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/GB6DF3> a skos:Concept ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B51DAF> ;
+    skos:definition "Sofern das Objekt Teil eines Ensemble, einer definierten Sammlung ist oder anderweitig besondere Beziehungen zu anderen Objekten aufweist, sollten diese erfasst werden.   Beispiel: \"Teil der Sammlung Becker\""@de,
+        "Any special relationships that the object has with other objects, or its place in a defined collection or ensemble, should be recorded."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "GB6DF3" ;
+    skos:prefLabel "Objektbeziehung"@de,
+        "object relationship"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "bedingte Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/GDF23F> a skos:Concept ;
+    ex:Verwendungshinweis "Der Verweis kann je nach Medium unterschiedlich ausfallen. Als URI/URL zu einem digitalen Datensatz oder, im Fall analoger Materialien, als Identifikationsnummer oder Standortangabe der Dokumentenablage" ;
+    skos:altLabel "Kennnummer"@de ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/CDD6B5> ;
+    skos:definition "Eindeutiger Hinweis, an welchem Ort die Dokumentation(en) zu finden ist/sind."@de,
+        "Clear indication of where the documentation(s) can be found."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "GDF23F" ;
+    skos:prefLabel "Verweis"@de,
+        "reference"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "bedingte Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/GF41DG> a skos:Concept ;
+    ex:Verwendungshinweis "In Fällen, in denen bei der Veröffentlichung des Datensatzes die zuständige Person nicht genannt werden kann/darf, sollte stattdessen zumindest die zuständige Einrichtung im Datensatz enthalten sein." ;
+    skos:altLabel "Werkstatt, Labor, Atelier, Restaurierungswerkstatt"@de,
+        "conservation lab"@en,
+        "conservation labratory"@en,
+        "conservation workshop"@en,
+        "studio"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DA9CGG> ;
+    skos:definition "Benennung der Einrichtung, in der die jeweilige Maßnahme durchgeführt wurde. Der Begriff \"Einrichtung\" wurde dabei als generischer Überbegriff verwendet, um individuelle Bezeichnungen wie \"Werkstatt\", \"Atelier\", \"Labor\", etc. unter einem Begriff zu vereinen. Institutionen können den jeweils in ihrem Arbeitsalltag verwendeten Begriff auf diesen Überbegriff mappen, ohne ihre eigene hausinterne Terminologie verändern zu müssen."@de,
+        "Name of the facility where the conservation measure was carried out. The term ‘facility’ was used as a generic umbrella term to combine individual terms such as ‘workshop’, “studio”, ‘laboratory’, etc. under one term. Institutions can map the term used in their everyday work to this umbrella term without having to change their own internal terminology."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00413> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "GF41DG" ;
+    skos:prefLabel "Zuständige Restaurierungseinrichtung"@de,
+        "responsible conservation facility"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/GF856C> a skos:Concept ;
+    ex:Verwendungshinweis "Die Angaben sollten sowohl den numerischen Wert als auch die Maßeinheit nach metrischem System im jeweils fachspezifischen Standard (mm, cm, m) enthalten" ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DBC278> ;
+    skos:definition "Angabe der vertikalen Ausdehnung eines Objektes von seiner untersten zur höchsten Stelle (Y-Achse)."@de,
+        "Specification of the vertical extension of an object from its lowest to its highest point (Y-axis)."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "GF856C" ;
+    skos:prefLabel "Höhe"@de,
+        "hight"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "bedingte Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/GVB7T9> a skos:Concept ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/BC5B57> ;
+    skos:definition "Angaben zur Fähigkeit des Objektes bei physischer Einwirkung seine Form oder Struktur bei zu behalten."@de,
+        "Information about the object's ability to retain its shape or structure when subjected to physical impact."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "GVB7T9" ;
+    skos:prefLabel "Stabilität"@de,
+        "stability"@en ;
+    ocmp:EO7QK9 "ja" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/HRO94F> a skos:Concept ;
+    ex:Verwendungshinweis "Für die interne Zuweisung der Verantwortlichkeit/Zuständigkeit ist es empfohlen, diese Daten regelhaft zu erfassen. Bei der potenziellen Veröffentlichung bzw. dem Austausch des Datensatzes außerhalb der eigenen Einrichtung ist an dieser Stelle zu entscheiden, in wie fern die Person namentlich genannt werden möchte/kann!" ;
+    skos:altLabel "person in charge (condition assessment)"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/F52262> ;
+    skos:definition "Benennung der Person, die die Zustandserfassung durchgeführt hat bzw. für diese verantwortlich ist."@de,
+        "Name of the person who carried out the condition assessment or is responsible for it."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00163> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "HRO94F" ;
+    skos:prefLabel "Zuständige Person (Zustandserfassung)"@de,
+        "responsible person (condition assessment)"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/K543W2> a skos:Concept ;
+    skos:altLabel "ID Datensatz"@de ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/AC16G1> ;
+    skos:definition "Eindeutige Kennung, die den Bericht referenzierbar macht."@de,
+        "Unique identifier that makes the report referenceable"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "K543W2" ;
+    skos:prefLabel "Datensatzkennung"@de,
+        "record identifier"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/LGPT6AC> a skos:Concept ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/K343FVC> ;
+    skos:definition "Angabe, um was für eine Art von weitere Objektnummer es sich handelt.   z.B. frühere Inventarnummer, temporäre Nummer, etc."@de,
+        "Indication of what type of additional object number it is.  E.g. previous inventory number, temporary number, etc."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "LGPT6AC" ;
+    skos:prefLabel "Art der weiteren Objektnummer"@de ;
+    ocmp:JYGNTK "bedingte Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/QD45G7> a skos:Concept ;
+    ex:Verwendungshinweis "Die Angaben sollten sowohl den numerischen Wert als auch die Maßeinheit nach metrischem System im jeweils fachspezifischen Standard (mm, cm, m) enthalten" ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DBC278> ;
+    skos:definition "Angabe zur räumlichen Ausdehnung eines Objektes von seiner Vorder- zur Rückseite (Z-Achse)."@de,
+        "Information about the spatial extent of an object from its front to its back (Z-axis)."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "QD45G7" ;
+    skos:prefLabel "Tiefe"@de,
+        "depth"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "optional" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/WF436G> a skos:Concept ;
+    ex:Verwendungshinweis "Die Angaben sollten sowohl den numerischen Wert als auch die Maßeinheit nach metrischem System im jeweils fachspezifischen Standard (mm, cm, m) enthalten" ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DBC278> ;
+    skos:definition "Angabe der horizontalen Ausdehnung eines Objektes von seiner linken zur rechten Seite in Frontalansicht (X-Achse)."@de,
+        "Specification of the horizontal extension of an object from its left to right side in frontal view (X-axis)."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:notation "WF436G" ;
+    skos:prefLabel "Breite"@de,
+        "width"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "bedingte Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/CDD6B5> a skos:Concept ;
+    ex:Verwendungshinweis "Diese Information kann entweder als Freitext eingegeben oder aus einer zuvor individuell definierten internen Liste gängiger Dokumentationsformen ausgewählt werden (z. B. aus einem Drop-down-Menü oder Checkboxen)" ;
+    skos:altLabel "type of documentation"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/F52262> ;
+    skos:definition "Angaben, in welcher Form der Zustand erfasst wurde bzw. in welcher/welchen Datenformen/Medien die Dokumentation des Zustandes vorliegt.  Beispiel: \"Zustandsbericht + Fotos\""@de,
+        "Information on how the condition was recorded, and the data formats/media in which the condition documentation is available.  Example: 'Condition report + photos'."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/GDF23F> ;
+    skos:notation "CDD6B5" ;
+    skos:prefLabel "Dokumentationsform"@de,
+        "documentation type"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "bedingte Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/D949G6> a skos:Concept ;
+    skos:altLabel "examination device"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DAB4B7> ;
+    skos:definition "Angaben, welches Gerät für die Untersuchung verwendet wurde."@de,
+        "Information about which instrument was used for the examination."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/D6A11G> ;
+    skos:notation "D949G6" ;
+    skos:prefLabel "Untersuchungsgerät"@de,
+        "examination instrument"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/F7D3DB> a skos:Concept ;
+    dcterms:source "Begriff nach DIN EN 16095:2012-10" ;
+    skos:altLabel "Inventarnummer, Objektnummer, Signatur, Katalognummer"@de,
+        "object number"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B51DAF> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300404626> ;
+    skos:definition "Nummer, die das Objekt eindeutig identifiziert. Dies sollte im Idealfall eine Inventarnummer sein. Da in der Realität nicht alle Objekte eine Inventarnummer haben, sind auch andere Arten von Nummern möglich, die das Objekt eindeutig referenzierbar machen.  Beispiel: \"O.3649\", \"2025-05-21\""@de,
+        "Number that uniquely identifies the object. Ideally, this should be an inventory number. However, since not all objects have an inventory number, other types of number that make the object uniquely referenceable are also possible.  Example: ‘O.3649’, ‘2025-05-21’"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/G59SR3> ;
+    skos:notation "F7D3DB" ;
+    skos:prefLabel "Kennzeichnungsnummer"@de,
+        "identification number"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/G5TA85> a skos:Concept ;
+    skos:altLabel "Grund der Zustandserfassung"@de ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/F52262> ;
+    skos:definition "Angaben, vor welchem Hintergrund die Zustandserfassung durchgeführt wurde.   Zum Beispiel im Zuge der Neu-Aufnahme eines Objektes in die Sammlung, in Vor- oder Nachbereitung einer konservatorisch-restauratorischen Maßnahme, vor oder nach einer Leihnahme, etc."@de,
+        "Information about the context in which the condition assessment was carried out.  For example, in the course of adding a new object to the collection, in preparation for or follow-up to conservation, before or after a loan, etc."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/A8ABBA> ;
+    skos:notation "G5TA85" ;
+    skos:prefLabel "Anlass der Zustandserfassung"@de,
+        "reason for the condition assessment"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "bedingte Pflicht" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/K343FVC> a skos:Concept ;
+    skos:altLabel "Alternative Nummern"@de,
+        "other object number"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B51DAF> ;
+    skos:definition "Weitere Nummern, die in der Vergangenheit dem Objekt zugeordnet wurden und erfasst werden sollen."@de,
+        "These are other numbers that were previously assigned to the object and should be recorded."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00188> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/LGPT6AC> ;
+    skos:notation "K343FVC" ;
+    skos:prefLabel "Weitere Objektnummern"@de,
+        "alternative object number"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "optional" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/A13CD1> a skos:Concept ;
+    dcterms:source "Begriff und Definition nach DIN EN 15898:2020-02" ;
+    skos:altLabel "Applikationstechnik"@de,
+        "Behandlung"@de,
+        "Methode"@de,
+        "Vorgehensweise"@de,
+        "method"@en,
+        "operation"@en,
+        "procedure"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/DA9CGG> ;
+    skos:definition "Beschreibung der konkreten Vorgehensweise und Techniken mit denen das Objekt zur Erreichung der festgelegten konservatorischen Zielsetzung behandelt wurde."@de,
+        "Description of the specific procedures and techniques used to treat the object in order to achieve the specified conservation objectives."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/CGC619>,
+        <https://www.w3id.org/conservation/terms/metadata/F87124> ;
+    skos:notation "A13CD1" ;
+    skos:prefLabel "Eingriff"@de,
+        "treatment"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/AA6941> a skos:Concept ;
+    ex:Verwendungshinweis "Idealerweise sollte auch die Belastbarkeit dieser Angaben mit erfasst werden, indem z.B. die Art der Untersuchung/Feststellung dieser Veränderung dokumentiert wird." ;
+    skos:altLabel "Beschädigung"@de,
+        "Schaden"@de,
+        "Schadensbild"@de,
+        "alteration"@en,
+        "deterioration"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/AC1786> ;
+    skos:definition "Beschreibung der beobachteten negativen Veränderungen am Objekt im Vergleich zu seinem als ursprünglich angenommenen Zustandes.   Auch die Angabe, dass keine Beschädigung erkennbar ist, sollte hier erfasst werden!"@de,
+        "Description of the observed negative changes to the object compared to its original condition.  Even if no damage is apparent, this should be noted here!"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/C2488A>,
+        <https://www.w3id.org/conservation/terms/metadata/D4A13D> ;
+    skos:notation "AA6941" ;
+    skos:prefLabel "Schadensphänomene"@de,
+        "damage"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/CCCC7G> a skos:Concept ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B7B8B6> ;
+    skos:definition "Oberbegriff zu Angaben der zuletzt durchgeführten Risikoanalyse und Beurteilung des Gefährdungspotentitals eines Objektes"@de,
+        "Generic term for information on the last risk analysis and assessment of the hazard potential of an object"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/ADD53A>,
+        <https://www.w3id.org/conservation/terms/metadata/AFD671> ;
+    skos:notation "CCCC7G" ;
+    skos:prefLabel "Letzte Gefährdungsbewertung"@de,
+        "last hazard assessment"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "optional" .
+
+<https://www.w3id.org/conservation/terms/metadata/D1F5D3> a skos:Concept ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/AC16G1> ;
+    skos:definition "Angaben zur Versionierung bzw. Überarbeitung des Berichtes"@de,
+        "Information on the versioning or revision of the report"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/98ZG32>,
+        <https://www.w3id.org/conservation/terms/metadata/B43DK5> ;
+    skos:notation "D1F5D3" ;
+    skos:prefLabel "Version"@de,
+        "version"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/DAB4B7> a skos:Concept ;
+    skos:altLabel "Untersuchungsmethode"@de,
+        "Untersuchungstechnik"@de,
+        "praktische Vorgehensweise"@de,
+        "examination methodology"@en,
+        "examination technique"@en,
+        "practical approach"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/B3FCA1> ;
+    skos:definition "Angabe, auf welche Art und Weise die Untersuchung durchgeführt wurde."@de,
+        "Information on how the examination was conducted."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/D1CFD5>,
+        <https://www.w3id.org/conservation/terms/metadata/D949G6> ;
+    skos:notation "DAB4B7" ;
+    skos:prefLabel "Untersuchungsverfahren"@de,
+        "examination procedure"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/AC1786> a skos:Concept ;
+    dcterms:source "Begriff und Definition nach DIN EN 16095:2012-10 und DIN EN 15898:2020-02" ;
+    skos:altLabel "Diagnose"@de,
+        "description of condition"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/F52262> ;
+    skos:definition "Oberbegriff für beobachtete, gemessene, geprüfte oder bewertete Informationen, die den Zustand des Objektes zum Zeitpunkt der Erfassung näher beschreiben. Insbesondere Veränderungen des Objektes, die im Vergleich zu einem früheren oder ursprünglichen Zustand bzw. vom zuletzt berichteten Zustand festgestellt werden, müssen dokumentiert werden."@de,
+        "A generic term for information that has been observed, measured, tested or assessed in order to describe the condition of an object in detail at the time of recording. In particular, changes to the object that are detected in comparison to a previous/original condition or to the last reported condition must be documented."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00268> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/AA6941>,
+        <https://www.w3id.org/conservation/terms/metadata/BC5B57>,
+        <https://www.w3id.org/conservation/terms/metadata/G79CA9> ;
+    skos:notation "AC1786" ;
+    skos:prefLabel "Zustandsbeschreibung"@de,
+        "condition description"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" .
+
+<https://www.w3id.org/conservation/terms/metadata/BAA258> a skos:Concept ;
+    skos:altLabel "Behandlungskonzept"@de,
+        "Konservierungs-Restaurierungsplanung"@de,
+        "Konservierungskonzept"@de,
+        "Konservierungsplanung"@de,
+        "Maßnahmenkonzept"@de,
+        "Restaurierungskonzept"@de,
+        "conservation plan"@en,
+        "conservation strategy"@en ;
+    skos:closeMatch <http://terminology.lido-schema.org/lido00032> ;
+    skos:definition "Oberbegriff für sämtliche Informationen, die im Zuge der Planung, Vorbereitung und Durchführung einer Erhaltungsmaßnahme erfasst werden."@de,
+        "Generic term for all information recorded in the course of a conservation."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/C6A532>,
+        <https://www.w3id.org/conservation/terms/metadata/DA9CGG>,
+        <https://www.w3id.org/conservation/terms/metadata/FGF575> ;
+    skos:notation "BAA258" ;
+    skos:prefLabel "Erhaltungskonzept"@de,
+        "conservation concept"@en ;
+    skos:topConceptOf <https://www.w3id.org/conservation/terms/metadata> ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "Pflicht" .
+
+<https://www.w3id.org/conservation/terms/metadata/C93638> a skos:Concept ;
+    skos:definition "Übergeordneter Begriff zur Erfassung aller Angaben bezüglich vorbeugender Maßnahmen, die ohne direkten Eingriff am Objekt selbst darauf abzielen, Schäden am Objekt zu vermindern."@de,
+        "Umbrella term covering all information relating to preventive measures that aim to reduce damage to the object without direct intervention on the object itself"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/C11192>,
+        <https://www.w3id.org/conservation/terms/metadata/C3A182>,
+        <https://www.w3id.org/conservation/terms/metadata/GF9C49> ;
+    skos:notation "C93638" ;
+    skos:prefLabel "Präventive Konservierung"@de,
+        "preventive conservation"@en ;
+    skos:topConceptOf <https://www.w3id.org/conservation/terms/metadata> ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" .
+
+<https://www.w3id.org/conservation/terms/metadata/CGC619> a skos:Concept ;
+    ex:Vokabularempfehlung "Art & Architecture Thesaurus" ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/A13CD1> ;
+    skos:definition "Benennung des bzw. der Materialien, die für die jeweilige konservatorische und/oder restauratorische Maßnahme verwendet wurden."@de,
+        "Name of the material(s) used for the respective conservation and/or restoration measure."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/C364G1>,
+        <https://www.w3id.org/conservation/terms/metadata/C421BF>,
+        <https://www.w3id.org/conservation/terms/metadata/D865C3> ;
+    skos:notation "CGC619" ;
+    skos:prefLabel "Verwendetes Material (Eingriff)"@de,
+        "used material (conservation intervention)"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "Pflicht" ;
+    ocmp:TQKQBM "Text/URI" .
+
+<https://www.w3id.org/conservation/terms/metadata/GF9C49> a skos:Concept ;
+    skos:altLabel "recommendations for handling"@en,
+        "recommendations for use"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/C93638> ;
+    skos:definition "Sammelbegriff zur Strukturierung von Richtlinien und Handlungsanweisungen für den sachgerechten Umgang mit dem behandelten Objekt, die zur langfristigen Erhaltung und Vermeidung von Folgeschäden generell und/oder nach abgeschlossener Konservierungs-Restaurierungsbehandlung zu beachten sind."@de,
+        "Collective term for structuring guidelines and instructions for the proper handling of the object in question, which must be observed for long-term preservation and to prevent consequential damage in general and/or after conservation-restoration treatment has been completed"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/B14C4A>,
+        <https://www.w3id.org/conservation/terms/metadata/D941BB>,
+        <https://www.w3id.org/conservation/terms/metadata/F2244D> ;
+    skos:notation "GF9C49" ;
+    skos:prefLabel "Allgemeine Umgangsempfehlungen"@de,
+        "general handling recommendations"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" .
+
+<https://www.w3id.org/conservation/terms/metadata/B7B8B6> a skos:Concept ;
+    skos:definition "Übergeordneter Begriff zur Strukturierung aller Angaben, zu potentiellen Gefahren, die von einem individuellen (behandelten) Objekt ausgehen und Maßnahmen, die zum Schutz der Gesundheit bei Umgang mit den jeweiligen Objekten eingehalten werden sollten.   Nicht gemeint sind dabei die allgemeinen Arbeitssicherheitsmaßnahmen, die im Rahmen der gesetzlichen Vorgaben für Restaurator*innen gelten."@de,
+        "Umbrella term for structuring all information on potential hazards posed by an individual (treated) object and measures that should be observed to protect health when handling the respective objects.  This does not refer to the general occupational safety measures that apply to restorers within the framework of legal requirements."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/BB78D2>,
+        <https://www.w3id.org/conservation/terms/metadata/BGGCA4>,
+        <https://www.w3id.org/conservation/terms/metadata/CCCC7G>,
+        <https://www.w3id.org/conservation/terms/metadata/FBFFF5> ;
+    skos:notation "B7B8B6" ;
+    skos:prefLabel "Gefährdungspotential"@de,
+        "risk potential"@en ;
+    skos:topConceptOf <https://www.w3id.org/conservation/terms/metadata> ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "bedingte Pflicht" .
+
+<https://www.w3id.org/conservation/terms/metadata/BC5B57> a skos:Concept ;
+    dcterms:source "Begriff nach DIN EN 15898:2020-02" ;
+    skos:altLabel "Erhaltungszustand"@de ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/AC1786> ;
+    skos:definition "Beschreibung der physischen Merkmale und Eigenschaften des Objektes wie Vollständigkeit, Stabilität, Festigkeit, Maße, Feuchtigkeitsgehalt, etc."@de,
+        "A description of the object's physical characteristics and properties, such as completeness, stability, strength, dimensions, moisture content, etc."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/C7C3B7>,
+        <https://www.w3id.org/conservation/terms/metadata/CA8K78>,
+        <https://www.w3id.org/conservation/terms/metadata/DBC278>,
+        <https://www.w3id.org/conservation/terms/metadata/GVB7T9> ;
+    skos:notation "BC5B57" ;
+    skos:prefLabel "Physischer Objektzustand"@de,
+        "physical condition"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "Pflicht" .
+
+<https://www.w3id.org/conservation/terms/metadata/C11192> a skos:Concept ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/C93638> ;
+    skos:definition "Sammeloberbegriff zur Dokumentation regelmäßiger Kontrollmaßnahmen des Objektzustandes und der Umgebungsbedingungen zur frühzeitigen Erkennung von Veränderungen und Einleitung entsprechender (Gegen-)Maßnahmen"@de,
+        "Collective term for the documentation of regular checks on the condition of the property and the surrounding conditions for the early detection of changes and the initiation of appropriate (counter)measures"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/B9835A>,
+        <https://www.w3id.org/conservation/terms/metadata/F396G6>,
+        <https://www.w3id.org/conservation/terms/metadata/F5G576>,
+        <https://www.w3id.org/conservation/terms/metadata/FFFCB7> ;
+    skos:notation "C11192" ;
+    skos:prefLabel "Monitoring"@de,
+        "monitoring"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "empfohlen" .
+
+<https://www.w3id.org/conservation/terms/metadata/C3A182> a skos:Concept ;
+    dcterms:source "D941BB" ;
+    skos:altLabel "conservation conditions"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/C93638> ;
+    skos:definition "Sammeloberbegriff für Angaben bezüglich erforderlicher Umgebungsparameter und physikalischer Rahmenbedingungen, die für die optimale Erhaltung des Objektes notwendig sind."@de,
+        "Collective term for information regarding the necessary environmental parameters and physical conditions required for the optimal preservation of the object."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/A2FA1B>,
+        <https://www.w3id.org/conservation/terms/metadata/BA8198>,
+        <https://www.w3id.org/conservation/terms/metadata/DF7759>,
+        <https://www.w3id.org/conservation/terms/metadata/FD6617> ;
+    skos:notation "C3A182" ;
+    skos:prefLabel "Konservatorische Bedingungen"@de,
+        "recommended conditions"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "empfohlen" .
+
+<https://www.w3id.org/conservation/terms/metadata/DA2D73> a skos:Concept ;
+    dcterms:source "Begriff nach DIN EN 16095:2012-10 & DIN EN 15898:2019" ;
+    skos:definition "Oberbegriff für Informationen, die die Beschaffenheit, Merkmale und die Bedeutung des Objektes näher beschreiben"@de,
+        "A generic term for information that provides a more detailed description of an object's nature, characteristics and significance."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/BGC9F3>,
+        <https://www.w3id.org/conservation/terms/metadata/C4BCF8>,
+        <https://www.w3id.org/conservation/terms/metadata/D866AD>,
+        <https://www.w3id.org/conservation/terms/metadata/F1BA31> ;
+    skos:notation "DA2D73" ;
+    skos:prefLabel "Objektbeschreibung"@de,
+        "object description"@en ;
+    skos:topConceptOf <https://www.w3id.org/conservation/terms/metadata> ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" .
+
+<https://www.w3id.org/conservation/terms/metadata/DBC278> a skos:Concept ;
+    skos:altLabel "Abmessungen"@de,
+        "Dimension"@de,
+        "Maßangabe"@de,
+        "current measurements"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/BC5B57> ;
+    skos:definition "Angaben zu den räumlichen Dimensionen des Objektes, zum letzten Zeitpunkt der Begutachtung. Die Maße des Objektes können sich im Laufe der Zeit verändern (z.B. durch Beschädigung oder die Zusammensetzung eines zerscherbten Objektes)."@de,
+        "Information on the spatial dimensions of the object at the time of the last assessment. The dimensions of the object may change over time (e.g. due to damage or the composition of a shattered object)."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/FRG491G>,
+        <https://www.w3id.org/conservation/terms/metadata/GF856C>,
+        <https://www.w3id.org/conservation/terms/metadata/QD45G7>,
+        <https://www.w3id.org/conservation/terms/metadata/WF436G> ;
+    skos:notation "DBC278" ;
+    skos:prefLabel "aktuelle Maße"@de,
+        "current dimensions"@en ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "bedingte Pflicht" .
+
+<https://www.w3id.org/conservation/terms/metadata/FFFCB7> a skos:Concept ;
+    dcterms:source "F396G6" ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/C11192> ;
+    skos:definition "Oberbegriff der kontrollierten Parameter und Umgebungsfaktoren während des Monitorings."@de,
+        "Generic term for the controlled parameters and environmental factors during monitoring"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/A5C668>,
+        <https://www.w3id.org/conservation/terms/metadata/BF3639>,
+        <https://www.w3id.org/conservation/terms/metadata/BF6D19>,
+        <https://www.w3id.org/conservation/terms/metadata/C9C527> ;
+    skos:notation "FFFCB7" ;
+    skos:prefLabel "Überprüfte Bedingungen"@de,
+        "Verified conditions"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "empfohlen" ;
+    ocmp:TQKQBM "Text" .
+
+<https://www.w3id.org/conservation/terms/metadata/AC16G1> a skos:Concept ;
+    skos:definition "administrative Angaben zu dem vorliegenden Bericht und seinen Inhalten"@de,
+        "Administrative information about this report and its contents"@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/D1F5D3>,
+        <https://www.w3id.org/conservation/terms/metadata/D78721>,
+        <https://www.w3id.org/conservation/terms/metadata/F285B2>,
+        <https://www.w3id.org/conservation/terms/metadata/G50P34>,
+        <https://www.w3id.org/conservation/terms/metadata/G56866>,
+        <https://www.w3id.org/conservation/terms/metadata/K543W2> ;
+    skos:notation "AC16G1" ;
+    skos:prefLabel "Administrative Metadaten"@de,
+        "administrative metadata"@en ;
+    skos:topConceptOf <https://www.w3id.org/conservation/terms/metadata> ;
+    ocmp:JYGNTK "Pflicht" .
+
+<https://www.w3id.org/conservation/terms/metadata/F52262> a skos:Concept ;
+    skos:altLabel "Zustandserhebung"@de,
+        "condition survey"@en ;
+    skos:definition "Oberbegriff für Informationen, die die systematische Erfassung des Zustands eines Objektes zu einem definierten Zeitpunkt dokumentieren."@de,
+        "A generic term for information documenting the systematic recording of an object's condition at a defined point in time."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00931> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/A4G52F>,
+        <https://www.w3id.org/conservation/terms/metadata/AC1786>,
+        <https://www.w3id.org/conservation/terms/metadata/CA1BC5>,
+        <https://www.w3id.org/conservation/terms/metadata/CDD6B5>,
+        <https://www.w3id.org/conservation/terms/metadata/G5TA85>,
+        <https://www.w3id.org/conservation/terms/metadata/HRO94F> ;
+    skos:notation "F52262" ;
+    skos:prefLabel "Zustandserfassung"@de,
+        "condition assessment"@en ;
+    skos:topConceptOf <https://www.w3id.org/conservation/terms/metadata> ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "Pflicht" .
+
+<https://www.w3id.org/conservation/terms/metadata/DA9CGG> a skos:Concept ;
+    skos:altLabel "Bestandserhaltung"@de,
+        "Durchgeführte Maßnahme"@de,
+        "Konservierung"@de,
+        "Konservierung-Restaurierung"@de,
+        "Restaurierung"@de,
+        "conservation"@en,
+        "measure"@en,
+        "restoration"@en ;
+    skos:broader <https://www.w3id.org/conservation/terms/metadata/BAA258> ;
+    skos:definition "Oberbegriff für die Angaben, die zur Durchführung einer konkreten Maßnahme erfasst werden."@de,
+        "Generic term for the information that is recorded for the realisation of a specific conservation measure."@en ;
+    skos:exactMatch <http://terminology.lido-schema.org/lido00034>,
+        <http://terminology.lido-schema.org/lido00402> ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/A13CD1>,
+        <https://www.w3id.org/conservation/terms/metadata/AF1F5C>,
+        <https://www.w3id.org/conservation/terms/metadata/C79561>,
+        <https://www.w3id.org/conservation/terms/metadata/CDD613>,
+        <https://www.w3id.org/conservation/terms/metadata/CDF685>,
+        <https://www.w3id.org/conservation/terms/metadata/G814D2>,
+        <https://www.w3id.org/conservation/terms/metadata/GF41DG> ;
+    skos:notation "DA9CGG" ;
+    skos:prefLabel "Erhaltungsmaßnahme"@de,
+        "intervention"@en ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "bedingte Pflicht" .
+
+<https://www.w3id.org/conservation/terms/metadata/CD5C3F> a skos:Concept ;
+    dcterms:source "DIN EN 16085:2012-10" ;
+    skos:altLabel "Beprobung"@de,
+        "Probenentnahme"@de,
+        "sample taking"@en ;
+    skos:definition "Oberbegriff für Informationen, die die systematische Entnahme von Materialproben aus einem Objekt für Analyse- und Untersuchungszwecke dokumentieren."@de,
+        "Generic term for information documenting the systematic removal of material samples from an object for analysis and examination purposes."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/C33D85>,
+        <https://www.w3id.org/conservation/terms/metadata/C8CG15>,
+        <https://www.w3id.org/conservation/terms/metadata/CB7747>,
+        <https://www.w3id.org/conservation/terms/metadata/D3AF3A>,
+        <https://www.w3id.org/conservation/terms/metadata/D9A6FA>,
+        <https://www.w3id.org/conservation/terms/metadata/F58F6D>,
+        <https://www.w3id.org/conservation/terms/metadata/F72743>,
+        <https://www.w3id.org/conservation/terms/metadata/FD2B2B> ;
+    skos:notation "CD5C3F" ;
+    skos:prefLabel "Probenahme"@de,
+        "sampling"@en ;
+    skos:topConceptOf <https://www.w3id.org/conservation/terms/metadata> ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "bedingte Pflicht" .
+
+<https://www.w3id.org/conservation/terms/metadata/B3FCA1> a skos:Concept ;
+    dcterms:source "Begriff nach DIN EN 15898:2020-02" ;
+    skos:altLabel "analysis"@en,
+        "investigation"@en ;
+    skos:definition "Oberbegriff für Informationen im Kontext der systematischen Begutachtung und Analyse eines Objekte zur Ermittlung von Materialzusammensetzungen, Objektaufbau, Herstellungstechnik, Erhaltungszuständen und/oder weitere Fragestellungen"@de,
+        "Generic term for information in the context of the systematic assessment and analysis of an object to determine material composition, object structure, manufacturing technique, state of preservation and/or other issues."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/A15F83>,
+        <https://www.w3id.org/conservation/terms/metadata/A2AG55>,
+        <https://www.w3id.org/conservation/terms/metadata/BGG5A6>,
+        <https://www.w3id.org/conservation/terms/metadata/CF3C22>,
+        <https://www.w3id.org/conservation/terms/metadata/DAB4B7>,
+        <https://www.w3id.org/conservation/terms/metadata/F8F594>,
+        <https://www.w3id.org/conservation/terms/metadata/G73958>,
+        <https://www.w3id.org/conservation/terms/metadata/G76B7G>,
+        <https://www.w3id.org/conservation/terms/metadata/G7F25F> ;
+    skos:notation "B3FCA1" ;
+    skos:prefLabel "Untersuchung"@de,
+        "examination"@en ;
+    skos:topConceptOf <https://www.w3id.org/conservation/terms/metadata> ;
+    ocmp:EO7QK9 "Ja" ;
+    ocmp:JYGNTK "bedingte Pflicht" .
+
+<https://www.w3id.org/conservation/terms/metadata/B51DAF> a skos:Concept ;
+    dcterms:source "Begriff nach DIN EN 16095:2012-10" ;
+    skos:altLabel "Objektidentifikation"@de,
+        "object labelling"@en ;
+    skos:definition "Übergeordneter Begriff zur eindeutigen Kennzeichnung des zu behandelnden Objektes sowie Erfassung weiterer indentifizierender Merkmale, die eine zweifelsfreie Zuordnung des Objektes während des gesamten Behandlungsprozesses gewährleistet."@de,
+        "A superordinate term that uniquely identifies the object to be treated and records further identifying characteristics. This ensures that the object can be unambiguously assigned throughout the entire treatment process."@en ;
+    skos:inScheme <https://www.w3id.org/conservation/terms/metadata> ;
+    skos:narrower <https://www.w3id.org/conservation/terms/metadata/B5DD1A>,
+        <https://www.w3id.org/conservation/terms/metadata/CD3341>,
+        <https://www.w3id.org/conservation/terms/metadata/F2A45F>,
+        <https://www.w3id.org/conservation/terms/metadata/F3G8D1>,
+        <https://www.w3id.org/conservation/terms/metadata/F7D3DB>,
+        <https://www.w3id.org/conservation/terms/metadata/F9GB13>,
+        <https://www.w3id.org/conservation/terms/metadata/FC3322>,
+        <https://www.w3id.org/conservation/terms/metadata/G76A78>,
+        <https://www.w3id.org/conservation/terms/metadata/GB6DF3>,
+        <https://www.w3id.org/conservation/terms/metadata/K343FVC> ;
+    skos:notation "B51DAF" ;
+    skos:prefLabel "Objektkennzeichnung"@de,
+        "object identification"@en ;
+    skos:topConceptOf <https://www.w3id.org/conservation/terms/metadata> ;
+    ocmp:EO7QK9 "Nein" ;
+    ocmp:JYGNTK "Pflicht" .
+
+<https://www.w3id.org/conservation/terms/metadata> a skos:ConceptScheme ;
+    dcterms:contributor "Elena Gómez Sánchez (DBM)",
+        "Gisela Gulbins (REM/VDR)",
+        "Gudrun Schwenk (SODa)",
+        "Kristina Fischer (LEIZA)",
+        "Lasse Mempel-Länger (LEIZA)",
+        "Nathaly Witt (LEIZA)",
+        "Sarah Thompson" ;
+    dcterms:creator "TWG Standards" ;
+    dcterms:description "Eine referenzierbare Sammlung relevanter Metadaten des Faches."@de ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:publisher "Deutsches Bergbau-Museum Bochum",
+        "Leibniz-Zentrum für Archäologie",
+        "Reiss-Engelhorn-Museen",
+        "Verband der Restaurator:innen (VDR) e.V." ;
+    dcterms:rights "CC BY 4.0" ;
+    dcterms:subject "Konservierung"@de,
+        "Metadaten"@de,
+        "Restaurierung"@de,
+        "conservation"@en,
+        "metadata"@en,
+        "restoration"@en ;
+    dcterms:title "Metadatenvokabular Konservierung/Restaurierung"@de ;
+    vann:preferredNamespaceUri "https://www.w3id.org/conservation/terms/metadata/" ;
+    skos:hasTopConcept <https://www.w3id.org/conservation/terms/metadata/AC16G1>,
+        <https://www.w3id.org/conservation/terms/metadata/B3FCA1>,
+        <https://www.w3id.org/conservation/terms/metadata/B51DAF>,
+        <https://www.w3id.org/conservation/terms/metadata/B7B8B6>,
+        <https://www.w3id.org/conservation/terms/metadata/BAA258>,
+        <https://www.w3id.org/conservation/terms/metadata/C93638>,
+        <https://www.w3id.org/conservation/terms/metadata/CD5C3F>,
+        <https://www.w3id.org/conservation/terms/metadata/DA2D73>,
+        <https://www.w3id.org/conservation/terms/metadata/F2AG55>,
+        <https://www.w3id.org/conservation/terms/metadata/F52262> .
+
