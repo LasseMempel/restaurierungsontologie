@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#RestauratorIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#Herstellungstechnik">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#wurdeHergestelltDurch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Objekt"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Herstellungstechnik"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#gibtAuskunftÜber"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#wirdVerwendet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Werkzeug"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Materialanalyse"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#verwendet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#hatUrsache">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Schadensphänomen"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Schadensursache"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#entstehtAus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Ergebnis"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Objektuntersuchung"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#führtZu"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#Schadensphänomen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#technologischeAuswertung">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#Methode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#verwendet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Materialanalyse"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Werkzeug"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#wirdVerwendet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#erstellt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#RestauratorIn"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Restaurierungskonzept"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#wirdErstelltVon"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#gibtAuskunftÜber">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Herstellungstechnik"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Objekt"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#wurdeHergestelltDurch"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#bearbeitet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Objekt"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#RestauratorIn"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#wirdBearbeitetVon"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Konservierungs- und Restaurierungsontologie des LEIZA</rdfs:comment>
+    <rdfs:label xml:lang="de">LEIZA Restaurierungs- und Konservierungsontologie</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#wirdBearbeitetVon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#RestauratorIn"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Objekt"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#bearbeitet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#wirdFestgestelltDurch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Zustand"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Objektuntersuchung"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#stelltFest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#zeigenAn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Schadensphänomen"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Zustand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#zeigtSichDurch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Zustand"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Schadensphänomen"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#wirdDurchgeführtVon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#technologischeAuswertung"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Objektuntersuchung"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#RestauratorIn"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#führtDurch"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#benutzt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#RestauratorIn"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Werkzeug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#Objekt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#technischesGerät">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#Werkzeug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#bestehtAus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Objekt"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Material"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#praktischeMaßnahme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#manuellesWerkzeug">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#Werkzeug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#gibtAn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Ergebnis"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Material"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#Werkzeug">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#bedingt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Zustand"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Restaurierungskonzept"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#beziehtSichAuf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#führtDurch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#RestauratorIn"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#technologischeAuswertung"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Objektuntersuchung"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#wirdDurchgeführtVon"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#hat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#praktischeMaßnahme"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Materialanalyse"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Methode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#wirdGebrauchtFür">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Material"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Werkzeug"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#praktischeMaßnahme"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#gebraucht"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#stelltFest">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Objektuntersuchung"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Zustand"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#wirdFestgestelltDurch"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#Ergebnis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#gebraucht">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#praktischeMaßnahme"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Material"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Werkzeug"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#wirdGebrauchtFür"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#wirdErstelltVon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Restaurierungskonzept"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#RestauratorIn"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#erstellt"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#beziehtSichAuf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Restaurierungskonzept"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Zustand"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#bedingt"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#Materialanalyse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#Objektuntersuchung"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#Restaurierungskonzept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#Zustand">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#führtZu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.conservationontology.com/conservationontology.owl#Objektuntersuchung"/>
+    <rdfs:range rdf:resource="http://www.conservationontology.com/conservationontology.owl#Ergebnis"/>
+    <owl:inverseOf rdf:resource="http://www.conservationontology.com/conservationontology.owl#entstehtAus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#Material">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#Objektuntersuchung">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.conservationontology.com/conservationontology.owl#Schadensursache">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+</rdf:RDF>
